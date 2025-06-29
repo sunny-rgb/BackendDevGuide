@@ -30,4 +30,5 @@
 
 ### 8.1 LeetCode
 
-[LeetCode Hot 100](./docs/leetcode/README.md)
+[LeetCode](./docs/leetcode/README.md)
+
