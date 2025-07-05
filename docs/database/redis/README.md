@@ -154,10 +154,14 @@ QUICKLIST
 
 ##### LINKEDLIST
 
+节点是指针相连
+
 ![image-20250107115534910](C:\Users\smc.shang\AppData\Roaming\Typora\typora-user-images\image-20250107115534910.png)
 
 ##### QUICKLIST
 
 ![image-20250107115548574](C:\Users\smc.shang\AppData\Roaming\Typora\typora-user-images\image-20250107115548574.png)3
+
+单个节点是ziplist
 
 LINKEDLIST编码下，查询节点个数的时间复杂度是多少   O(1)
