@@ -52,8 +52,6 @@ EMBSTR和RAW都是由**redisObiect和SDS**两个结构组成。
 
 ![image-20250705224714442](C:\Users\laxsm\AppData\Roaming\Typora\typora-user-images\image-20250705224714442.png)
 
-
-
 SDS可以避免：
 1.每次计算字符串长度的复杂度为O(N);
 2.对字符串进行追加，需要重新分配内存;
@@ -67,11 +65,7 @@ SDS可以避免：
 
 3.不再以0'作为判断标准，二进制安全。
 
-
-
 这里可能会想，SDS可以预留空间，那么预留空间有多大呢，规则如下len小于1M的情况下，alloc=2倍*len，即预留len大小的空间:len大于1M的情况下，alloc是1M+len，即预留1M大小的空间。简单来说，预留空间为**min(len，1M)**
-
-
 
 ## 1.2 List
 
@@ -84,20 +78,15 @@ SDS可以避免：
 + ```redis
   LPUSH   RPUSH (LPUSH key value1 value2...)
   ```
-
 + ```
   LPOP  RPOP  LREM(LREM key count value,  从左到右移除 count 个等于value的元素，0表示全部移除)
   ```
-
 + ```
   DEL (DEL key)   UNLINK(异步删除)
   ```
-
 + ```
   LLEN (LLEN key，key的长度)   LRANGE(LRANGE key start stop)
   ```
-
-  
 
 #### 编码方式
 
@@ -109,9 +98,7 @@ LINKERLIST
 
 QUICKLIST
 
-------
-
-
+---
 
 ##### ZIPLIST
 
@@ -129,7 +116,7 @@ QUICKLIST
 
 ​		zlend：	结束标志位
 
-​		
+​
 
 ​		数据中，entry由 prevlen  encoding  entry-data构成
 
@@ -144,11 +131,7 @@ QUICKLIST
 
 ​		在ZIPLIST中查询指定数据的节点，需要遍历这个压缩列表，平均时间复杂度是0(N).
 
-
-
 ​		更新数据是O(n)，但是容易引起连锁反应，即prevlen 1字节和5字节的变换导致后面的变化的连锁反应。
-
-
 
 ​		通个ListPack解决，即不记录prevlen ，记录本身长度
 
@@ -160,8 +143,9 @@ QUICKLIST
 
 ##### QUICKLIST
 
-![image-20250107115548574](C:\Users\smc.shang\AppData\Roaming\Typora\typora-user-images\image-20250107115548574.png)3
+![image-20250107115548574](C:\Users\smc.shang\AppData\Roaming\Typora\typora-user-images\image-20250107115548574.png)
 
 单个节点是ziplist
 
 LINKEDLIST编码下，查询节点个数的时间复杂度是多少   O(1)
+
