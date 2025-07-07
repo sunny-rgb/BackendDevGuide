@@ -10,7 +10,7 @@ Go 是由 **Google** 在 2007 年设计并于 2009 年开源发布的一种 **�
 
 **IDE**推荐使用**JetBrains**系列的**[GoLand](https://www.jetbrains.com/go/promo/?source=google&medium=cpc&campaign=APAC_en_ASIA_GoLand_Branded&term=goland&content=546094953593&gad_source=1&gad_campaignid=10165081362&gbraid=0AAAAADloJzjuSZdYd7iq3-ndTIqNwPYeV&gclid=CjwKCAjwmenCBhA4EiwAtVjzmsQy6ms70b_4mvqHL-ceB_EAFpCzPrWGtTC1f6fCNy2Ydg9pjhKL9xoCsKYQAvD_BwE)**，功能非常强大，并且开箱即用，海量插件扩展，生态完善。
 
-## 3. Go语法与数据结构
+## 3. Go语法与并发编程
 
 ### 3.1 语法基础
 
@@ -232,15 +232,256 @@ func main() {
 }
 ```
 
-### 3.2 语法进阶
+#### 条件语句
 
+**if-else语句**
 
+```go
+package main
+
+import "fmt"
+
+func main() {
+	age := 20
+
+	if age >= 18 {
+		fmt.Println("成年人")
+	} else if age >= 13 && age < 18 {
+		fmt.Println("青少年")
+	} else {
+		fmt.Println("儿童")
+	}
+
+	// if 语句还可以带初始化语句
+	if score := 85; score >= 60 {
+		fmt.Println("及格")
+	} else {
+		fmt.Println("不及格")
+	}
+}
+```
+
+**switch-case语句**
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	grade := "B"
+
+	switch grade {
+	case "A":
+		fmt.Println("优秀")
+	case "B", "C":
+		fmt.Println("良好")
+	case "D":
+		fmt.Println("及格")
+	default:
+		fmt.Println("不及格")
+	}
+
+	// switch 也可以不带表达式，写类似 if-else 的逻辑
+	score := 75
+	switch {
+	case score >= 90:
+		fmt.Println("优秀")
+	case score >= 60:
+		fmt.Println("及格")
+	default:
+		fmt.Println("不及格")
+	}
+}
+```
+
+#### 循环语句
+
+go语言的循环不像其它语言一样有多种，比如c++有for，while，do-while。在go语言中循环就只有for一种，上手写起来非常的快。
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// 基本 for 循环
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	// 类似 while 的用法
+	i := 0
+	for i < 5 {
+		fmt.Println(i)
+		i++
+	}
+
+	// 遍历数组、切片
+	arr := []string{"a", "b", "c"}
+	for index, value := range arr {
+		fmt.Println(index, value)
+	}
+}
+```
+
+#### 函数
+
+```go
+package main
+
+import "fmt"
+
+// Add 是一个普通函数，不属于任何类型
+func Add(a int, b int) int {
+	return a + b
+}
+
+func main() {
+	// 使用函数
+	sum := Add(3, 5)
+	fmt.Println("Sum:", sum)
+}
+```
+
+#### 方法
+
+```go
+package main
+
+import "fmt"
+
+// Rectangle 定义一个结构体
+type Rectangle struct {
+	Width  float64
+	Height float64
+}
+
+// Area : 给 Rectangle 定义一个方法 Area
+// 注意：方法有“接收者” (r Rectangle)
+func (r Rectangle) Area() float64 {
+	return r.Width * r.Height
+}
+
+// Scale : 使用指针接收传来的修改值
+func (r *Rectangle) Scale(factor float64) {
+	r.Width *= factor
+	r.Height *= factor
+}
+
+func main() {
+	// 使用结构体 + 方法
+	rect := Rectangle{Width: 4, Height: 5}
+	fmt.Println("Rectangle area:", rect.Area())
+
+	// 调用指针方法，修改值
+	rect.Scale(2)
+	fmt.Println("Scaled rectangle area:", rect.Area())
+}
+```
+
+#### 接口
+
+```go
+package main
+
+import "fmt"
+
+type Rectangle struct {
+	Width  float64
+	Height float64
+}
+
+type Circle struct {
+	Radius float64
+}
+
+// Shape : 定义一个接口 Shape
+type Shape interface {
+	Area() float64
+}
+
+// Area : 给 Rectangle 定义一个方法 Area()
+func (r Rectangle) Area() float64 {
+	return r.Width * r.Height
+}
+
+// Area : Circle 也实现了 Area() 方法，所以满足 Shape 接口
+func (c Circle) Area() float64 {
+	return 3.1415 * c.Radius * c.Radius
+}
+
+func main() {
+	// 使用接口
+	var shape Shape
+
+	rect := Rectangle{Width: 4, Height: 5}
+	shape = rect // Rectangle 实现了 Shape 接口
+	fmt.Println("Shape area (Rectangle):", shape.Area())
+
+	circle := Circle{Radius: 3}
+	shape = circle // Circle 也实现了 Shape 接口
+	fmt.Println("Shape area (Circle):", shape.Area())
+}
+```
+
+### 3.2 语法进阶与并发编程
+
+#### 并发概述
+
+要理解go语言的并发，首先需要理解清楚计算机操作系统中的**进程、线程、协程概念**和**并行与并发的区别**。
+
+#### Goroutine
+
+#### Channel
+
+#### Sync
+
+#### Select
+
+#### Context
+
+#### 定时器
+
+#### 协程池
+
+#### 反射
 
 ## 4. Go底层原理
 
-## 5. 并发编程
+### 4.1 设计模式
 
-## 6. Web端开发与微服务框架
+### 4.2 程序初始化
 
-## 7.面试题库
+### 4.3 数据结构
+
+### 4.4 协程调度
+
+### 4.5 逃逸分析
+
+### 4.6 Go语言垃圾回收
+
+### 4.7 Go内存管理
+
+## 5. Web端开发与微服务框架
+
+### 5.1 go常用微服务框架
+
+[go微服务框架对比](https://zhuanlan.zhihu.com/p/488233067)
+
+### 5.2 kratos
+
+**Kratos** 是由哔哩哔哩（Bilibili）开源的、面向微服务场景的 Go 语言框架，帮助开发者基于 Go 实现高可维护性、高性能和云原生友好的分布式系统。它集成了服务发现、配置管理、熔断、限流、链路追踪、日志等微服务常用能力，同时提供清晰的项目结构和代码生成工具。Kratos 广泛应用于高并发、高可用的互联网业务场景，是 Go 微服务领域较为成熟的工程化实践框架之一。以下是快速学习应用Kratos框架的学习资料：
+
+[Kratos官方文档](https://go-kratos.dev/docs/)
+
+[Kratos源码](https://github.com/go-kratos/kratos)
+
+[Kratos快速入门搭建项目](https://www.bilibili.com/video/BV1t3411h7uA/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bf13787311127d9efdb95deea8b81a48)
+
+### 5.3 项目
+
+基于**Go + Kratos**实现线上聊天论坛app/小程序/网页端
+
+## 6. 面试题库
 
