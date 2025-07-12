@@ -151,13 +151,13 @@ func main() {
 	var m1 map[string]int  // nil map
 	fmt.Println("m1:", m1) // 输出：map[]
 
-	// 初始化
+	// 使用 make 初始化
 	m1 = make(map[string]int)
 	m1["Alice"] = 90
 	m1["Bob"] = 85
 	fmt.Println("add m1:", m1)
 
-	// 用 make 初始化
+	// 使用 字面量 初始化
 	m2 := map[string]string{
 		"apple":  "苹果",
 		"banana": "香蕉",
@@ -463,7 +463,7 @@ func main() {
 
 ### 4.7 Go内存管理
 
-## 5. Web端开发与微服务框架
+## 5. 微服务框架与项目实践
 
 ### 5.1 go常用微服务框架
 
@@ -479,7 +479,9 @@ func main() {
 
 [Kratos快速入门搭建项目](https://www.bilibili.com/video/BV1t3411h7uA/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bf13787311127d9efdb95deea8b81a48)
 
-### 5.3 项目
+### 5.3 活动抽奖系统
+
+### 5.4 线上聊天论坛app
 
 基于**Go + Kratos**实现线上聊天论坛app/小程序/网页端
 
