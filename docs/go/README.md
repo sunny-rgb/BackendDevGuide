@@ -471,19 +471,89 @@ func main() {
 
 ### 5.2 kratos
 
-**Kratos** 是由哔哩哔哩（Bilibili）开源的、面向微服务场景的 Go 语言框架，帮助开发者基于 Go 实现高可维护性、高性能和云原生友好的分布式系统。它集成了服务发现、配置管理、熔断、限流、链路追踪、日志等微服务常用能力，同时提供清晰的项目结构和代码生成工具。Kratos 广泛应用于高并发、高可用的互联网业务场景，是 Go 微服务领域较为成熟的工程化实践框架之一。以下是快速学习应用Kratos框架的学习资料：
+**Kratos** 是由哔哩哔哩（Bilibili）开源的、面向微服务场景的 Go 语言框架，帮助开发者基于 Go 实现高可维护性、高性能和云原生友好的分布式系统。它集成了服务发现、配置管理、熔断、限流、链路追踪、日志等微服务常用能力，同时提供清晰的项目结构和代码生成工具。Kratos 广泛应用于高并发、高可用的互联网业务场景，是 Go 微服务领域较为成熟的工程化实践框架之一。
+
+#### 5.2.1 Kratos架构
+
+![](assets/Kratos架构.png)
+
+API：HTTP/JSON、GRPC/Protobuf
+
+Error：枚举
+
+DI：依赖注入（类似于Java Spring里面的依赖注入）
+
+Auth：鉴权，流量的入口处，可以去拦截非正常请求
+
+Config：配置相关，和数据源打交道，比如MySQL，Redis
+
+Registry：注册中心，和服务的注册及发现有关
+
+Encoding：内容编码，传输内容的编码格式是什么样子的，比如UTF-8、GBK
+
+Transport：HTTP/GRPC的传输层。
+
+Middleware：中间件中间层，主要起拦截的作用（类似于Java的切面）
+
+Logging：日志相关
+
+Metrics：指标监控，比较主流的是Prometheus。可以用来监控CPU、内存等
+
+Tracing：链路追踪
+
+Database/Cache：数据库和缓存
+
+#### 5.2.2 Kratos项目搭建
+
+**Kratos快速入门应用学习资料**
 
 [Kratos官方文档](https://go-kratos.dev/docs/)
 
-[Kratos源码](https://github.com/go-kratos/kratos)
+[Kratos简介（视频）](https://www.bilibili.com/video/BV1xq4y1W78N?spm_id_from=333.788.videopod.episodes&vd_source=bf13787311127d9efdb95deea8b81a48)
 
-[Kratos快速入门搭建项目](https://www.bilibili.com/video/BV1t3411h7uA/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bf13787311127d9efdb95deea8b81a48)
+[Kratos源码（github）](https://github.com/go-kratos/kratos)
+
+下面是比较简短的拉取并启动一个Kratos项目的脚本，更详细的命令和介绍可以阅读上述的Kratos官方文档
+
+> **启动Go官方依赖管理**
+>
+> go env -w GO111MODULE=on
+
+> **配置代理（常用于国内用户网络限制）**
+>
+> go env -w GOPROXY=https://goproxy.cn,direct
+
+> **CLI工具**
+>
+> go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
+
+> **通过Kratos命令创建项目模板**
+>
+> kratos new helloworld
+
+> **运行项目**
+>
+> kratos run
 
 ### 5.3 活动抽奖系统
 
 ### 5.4 线上聊天论坛app
 
-基于**Go + Kratos**实现线上聊天论坛app/小程序/网页端
+基于**Go + Kratos + Gen + Grom**实现线上聊天论坛app/小程序/网页端
+
+[Kratos快速入门搭建项目（视频）](https://www.bilibili.com/video/BV1t3411h7uA/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=bf13787311127d9efdb95deea8b81a48)
+
+[Kratos快速入门项目源码（github）](https://github.com/gothinkster/realworld)
+
+[TangSengDaoDaoServer源码（高颜值 IM 即时通讯,聊天）](https://github.com/TangSengDaoDao/TangSengDaoDaoServer)
+
+
 
 ## 6. 面试题库
+
+
+
+
+
+
 
