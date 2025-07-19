@@ -16,7 +16,7 @@ Go 是由 **Google** 在 2007 年设计并于 2009 年开源发布的一种 **�
 
 Go语言的语法相比较C++而言，简单一些，可以根据下面的思维导图进行快速学习，重点理解掌握**数组**、**切片**、**Map**以及**指针**的使用。
 
-![](assets/Go语法基础.svg)
+![](assets/go语言/Go语法基础.svg)
 
 #### 结构体
 
@@ -475,7 +475,7 @@ func main() {
 
 #### 5.2.1 Kratos架构
 
-![](assets/Kratos架构.png)
+![](assets/kratos/Kratos架构.png)
 
 API：HTTP/JSON、GRPC/Protobuf
 
@@ -513,7 +513,7 @@ Database/Cache：数据库和缓存
 
 [Kratos源码（github）](https://github.com/go-kratos/kratos)
 
-下面是比较简短的拉取并启动一个Kratos项目的脚本，更详细的命令和介绍可以阅读上述的Kratos官方文档
+下面是比较简短的拉取并启动一个Kratos项目的脚本，更详细的命令和介绍可以阅读上述的Kratos官方文档。
 
 > **启动Go官方依赖管理**
 >
@@ -527,13 +527,68 @@ Database/Cache：数据库和缓存
 >
 > go install github.com/go-kratos/kratos/cmd/kratos/v2@latest
 
-> **通过Kratos命令创建项目模板**
+>**查看Kratos版本**
+>
+>kratos --version
+
+上述kratos CLI安装成功之后，会显示当前全局的kratos版本，一般是 v2.xx。需要注意的是，CLI 工具版本和你项目中的框架版本可以不一样
+
+> **通过Kratos CLI创建项目模板**
 >
 > kratos new helloworld
+
+上述命令行成功执行之后，会出现一个 `helloworld` 项目，首先要做的就是简单了解一下kratos搭建的项目目录结构。
+
+![](assets/kratos/kratos%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
+
+
 
 > **运行项目**
 >
 > kratos run
+
+可以看到helloworld项目中默认写好了一个http服务，端口号是8000。启动成功之后，在本地浏览器中输入 `127.0.0.1:8000//helloworld/message`，浏览器能正常显示，就代表项目成功跑起来。接下来根据需求在项目的对应目录添加代码和业务逻辑即可。
+
+
+
+#### 5.2.3 Kratos常见问题
+
+##### **Q1. Kratos常用通信协议**
+
+在 Go 的 Kratos 框架中，`http` 和 `grpc` 是两种常见的服务通信协议。
+
+ **HTTP/RESTful API**
+
+- 基于 HTTP/1.1 或 HTTP/2，使用 JSON 数据格式
+- 易于使用，适合对外提供开放 API
+
+**gRPC（Google Remote Procedure Call）**
+
+Kratos 默认首推的通信协议。
+
+- 基于 HTTP/2，支持双向流、流控、Header 压缩
+- 使用 Protocol Buffers（.proto）定义服务接口和消息格式
+- 高性能、强类型，适用于微服务之间的高效通信
+
+- 内置 `proto` 文件编译、服务生成、注册发现等完整支持
+- 常用于服务间内部通信
+
+下表是这两种常用服务的对比：
+
+| 特性                  | HTTP（REST）                    | gRPC（RPC）                      |
+| --------------------- | ------------------------------- | -------------------------------- |
+| **协议**              | HTTP/1.1                        | HTTP/2（支持流式传输）           |
+| **接口定义**          | 手动写路由和 handler            | 使用 `.proto` 文件生成代码       |
+| **传输格式**          | JSON                            | Protobuf（二进制，更小更快）     |
+| **调试便利性**        | 非常方便（浏览器/curl/Postman） | 较麻烦，需要 grpcurl / grpcui 等 |
+| **性能**              | 一般                            | 更高效，延迟低                   |
+| **服务发现/负载均衡** | 手动或借助外部工具              | 支持内建负载均衡 + 服务发现      |
+| **流式通信**          | 不支持                          | 支持双向流（streaming）          |
+| **使用场景**          | 对外开放API                     | 微服务间通信                     |
+
+也就是说，当用户直接调用/需要对外提供服务的时候，使用HTTP协议；微服务之间调用/内部服务的时候，使用gRPC协议，常用于对性能要求高，数据量大的时候。
+
+Q2. 
 
 ### 5.3 活动抽奖系统
 
