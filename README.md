@@ -26,9 +26,21 @@
 
 ## 7. 计算机网络
 
-## 8. 机试 & 手撕算法
+## 8. Tools
 
-### 8.1 LeetCode
+### 8.1 docker
+
+[docker 安装配置及使用](./docs/tools/docker/README.md)
+
+### 8.2 linux
+
+### 8.3 git
+
+### 8.4 nginx
+
+## 9. 机试 & 手撕算法
+
+### 9.1 LeetCode
 
 [LeetCode](./docs/leetcode/README.md)
 
