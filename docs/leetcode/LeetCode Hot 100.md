@@ -10,37 +10,37 @@
 
 ## 高频考点
 
-1. [最长连续序列](#⭐⭐⭐⭐⭐ 最长连续序列  ✅😅) ✅✅
-2. [盛最多水的容器](#⭐⭐⭐⭐ 盛最多水的容器  ✅😅) ✅✅
-3. [三数之和](# ⭐⭐⭐⭐⭐ 三数之和  ✅😅) ✅✅
-4. [接雨水](# ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅)✅
-5. [无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) ✅✅
-6. [滑动窗口最大值](# ⭐⭐⭐⭐⭐⭐⭐滑动窗口最大值✅😅) ✅✅
-7. [最小覆盖子串](# ⭐⭐⭐⭐⭐⭐⭐最小覆盖子串✅😅) ✅
-8. [合并区间](# ⭐⭐⭐⭐⭐合并区间✅😅) ✅
-9. [搜索二维矩阵2](# ⭐⭐⭐⭐⭐ 搜索二维矩阵2  ✅😀) ✅
-10. [反转链表](# ⭐⭐⭐反转链表 ✅😅) ✅✅
-11. 两两交换链表中的节点
-12. k个一组翻转链表
-13. [二叉树的中序遍历](# ⭐⭐⭐二叉树的中序遍历 ✅😅) ✅✅
-14. [二叉树的最大深度](# ⭐⭐二叉树的最大深度 ✅😅) ✅✅
-15. 二叉树的层序遍历
-16. 二叉树的右视图
-17. 路径总和3
-18. 二叉树的最近公共祖先
-19. [岛屿数量](# ⭐⭐ ⭐ ⭐ ⭐  岛屿数量✅😅) ✅✅
-20. [全排列](# ⭐⭐ ⭐ ⭐ ⭐  全排列 ✅😅) ✅✅
-21. 子集
-22. 组合总和
-23. 搜索插入位置
-24. [打家劫舍](# ⭐⭐⭐⭐⭐打家劫舍 ✅😅) ✅✅
-25. 零钱兑换
+1. [最长连续序列](#⭐⭐⭐⭐⭐ 最长连续序列  ✅😅) ✅✅1️⃣
+2. [盛最多水的容器](#⭐⭐⭐⭐ 盛最多水的容器  ✅😅) ✅✅2️⃣
+3. [三数之和](# ⭐⭐⭐⭐⭐ 三数之和  ✅😅) ✅✅2️⃣
+4. [接雨水](# ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅)✅✅3️⃣
+5. [无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) ✅✅1️⃣
+6. [滑动窗口最大值](# ⭐⭐⭐⭐⭐⭐⭐滑动窗口最大值✅😅) ✅✅2️⃣
+7. [最小覆盖子串](# ⭐⭐⭐⭐⭐⭐⭐最小覆盖子串✅😅) ✅✅3️⃣
+8. [合并区间](# ⭐⭐⭐⭐⭐合并区间✅😅) ✅✅3️⃣
+9. [搜索二维矩阵2](# ⭐⭐⭐⭐⭐ 搜索二维矩阵2  ✅😀) ✅ ✅3️⃣
+10. [反转链表](# ⭐⭐⭐反转链表 ✅😅) ✅✅1️⃣
+11. [两两交换链表中的节点](# ⭐⭐⭐⭐⭐两两交换链表中的节点 ✅😅) ✅✅4️⃣
+12. [k个一组翻转链表](# ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅) ✅✅4️⃣
+13. [二叉树的中序遍历](# ⭐⭐⭐二叉树的中序遍历 ✅😅) ✅✅1️⃣
+14. [二叉树的最大深度](# ⭐⭐二叉树的最大深度 ✅😅) ✅✅1️⃣
+15. [二叉树的层序遍历](# ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅) ✅✅4️⃣
+16. [二叉树的右视图](# ⭐⭐⭐⭐⭐二叉树的右视图 ✅😅) ✅✅4️⃣
+17. [路径总和3](# ⭐⭐⭐⭐⭐路径总和3 ✅😅) ✅5️⃣
+18. [二叉树的最近公共祖先](# ⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅) ✅5️⃣
+19. [岛屿数量](# ⭐⭐⭐⭐⭐ 岛屿数量✅😅) ✅✅1️⃣
+20. [全排列](# ⭐⭐⭐⭐⭐ 全排列 ✅😅) ✅✅1️⃣
+21. [子集](# ⭐⭐⭐⭐⭐ 子集 ✅😅) ✅5️⃣
+22. [组合总和](# ⭐⭐⭐⭐⭐ 组合总和 ✅😅) ✅5️⃣
+23. [搜索插入位置](# ⭐⭐ 搜索插入位置（二分查找）  ✅😀) ✅✅1️⃣
+24. [打家劫舍](# ⭐⭐⭐⭐⭐打家劫舍 ✅😅) ✅✅1️⃣
+25. [零钱兑换](# ⭐⭐⭐⭐⭐零钱兑换 ✅😅) ✅5️⃣
 26. 最长递增子序列
 27. 最小路径和
 28. 最长公共子序列
 29. 下一个排列
 
-
+1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣
 
 
 
@@ -466,6 +466,7 @@ func minWindow(s string, t string) string {
             count--
         }
 
+        // 注意，这里一定是 left <= right
         for count == 0 && left <= right {
             // 2. 更新滑动窗口起点和长度
             if right-left+1 < minLen {
@@ -560,6 +561,7 @@ func merge(intervals [][]int) [][]int {
         next := intervals[i]
 
         // 重叠合并，取最大的右端点
+        // 根据题目说明，= 也算重叠
         // next[0] current[1] next[1]
         if next[0] <= current[1] {
             if current[1] < next[1] {
@@ -928,6 +930,145 @@ func hasCycle(head *ListNode) bool {
 }
 ```
 
+##### ⭐⭐⭐合并两个有序链表 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+    dummy := &ListNode{}
+    cur := dummy
+
+    p1, p2 := list1, list2
+
+    for p1 != nil && p2 != nil {
+        if p1.Val < p2.Val {
+            cur.Next = p1
+            p1 = p1.Next
+        } else {
+            cur.Next = p2
+            p2 = p2.Next
+        }
+        // 这里注意，这个cur指针一定要继续往下移动
+        cur = cur.Next
+    }
+
+    if p1 != nil {
+        cur.Next = p1
+    }
+
+    if p2 != nil {
+        cur.Next = p2
+    }
+
+    return dummy.Next
+}
+```
+
+##### ⭐⭐⭐⭐⭐两两交换链表中的节点 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func swapPairs(head *ListNode) *ListNode {
+    // 虚拟头节点，防止第一个节点被交换后丢失
+    dummy := &ListNode{Next: head}
+
+    // 指向当前准备交换的两个节点的，前一个节点
+    prev := dummy
+
+    for head != nil && head.Next != nil {
+        // 当前要交换的两个节点
+        first := head
+        second := head.Next
+
+        // 开始交换
+        prev.Next = second
+        first.Next = second.Next
+        second.Next = first
+
+        // 指针向后移动，开始新的一轮
+        // 这时候的first是上一轮的second
+        prev = first
+        head = first.Next
+    }
+
+    return dummy.Next
+}
+```
+
+##### ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func reverseKGroup(head *ListNode, k int) *ListNode {
+    // 虚拟节点
+        dummy := &ListNode{Next: head}
+
+    prevGroupEnd := dummy
+    for {
+        // 1. 按照K个进行分组
+        kth := prevGroupEnd
+        for i := 0; i < k && kth != nil; i++ {
+            kth = kth.Next
+        }
+
+        // 不够K个直接返回
+        if kth == nil {
+            break
+        }
+
+        // 下一组的起始节点
+        nextGroupStart := kth.Next
+
+        // 2. 先断链，再翻转组内元素
+        kth.Next = nil
+        groupStart := prevGroupEnd.Next
+        newGroupHead := reverse(groupStart)
+
+        // 3. 将翻转后的新group接回去
+        prevGroupEnd.Next = newGroupHead
+        groupStart.Next = nextGroupStart
+
+        // 4. 继续翻转下一组，前一组的开始节点，已经变成了“前一组”的结束节点
+        prevGroupEnd = groupStart
+    }
+
+    return dummy.Next
+}
+
+// 翻转第k组链表
+func reverse(head *ListNode) *ListNode {
+    var prev *ListNode
+    cur := head
+
+    for cur != nil {
+        next := cur.Next
+        cur.Next = prev
+        prev = cur
+        cur = next
+    }
+
+    return prev
+}
+```
+
 
 
 ### 二叉树（15）
@@ -1052,13 +1193,281 @@ func invertTree(root *TreeNode) *TreeNode {
 }
 ```
 
+##### ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func levelOrder(root *TreeNode) [][]int {
+    if root == nil {
+        return [][]int{}
+    }
+
+    // 广度优先搜索BFS
+    res := make([][]int, 0)
+    queue := []*TreeNode{root}
+
+    for len(queue) > 0 {
+        layerSize := len(queue)
+        var layer []int
+
+        for i := 0; i < layerSize; i++ {
+            node := queue[0]
+            queue = queue[1:]
+
+            layer = append(layer, node.Val)
+
+            if node.Left != nil {
+                queue = append(queue, node.Left)
+            }
+
+            if node.Right != nil {
+                queue = append(queue, node.Right)
+            }
+        }
+
+        res = append(res, layer)
+    }
+
+    return res
+}
+```
+
+##### ⭐⭐⭐⭐⭐二叉树的右视图 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rightSideView(root *TreeNode) []int {
+    if root == nil {
+        return []int{}
+    }
+
+    // 实际上就是层序遍历
+    res := make([]int, 0)
+    queue := []*TreeNode{root}
+
+    for len(queue) > 0 {
+        layerSize := len(queue)
+
+        for i := 0; i < layerSize; i++ {
+            node := queue[0]
+            queue = queue[1:]
+
+            // 和层序遍历唯一的不同，就是这里
+            if i == layerSize-1 {
+                res = append(res, node.Val)
+            }
+
+            if node.Left != nil {
+                queue = append(queue, node.Left)
+            }
+
+            if node.Right != nil {
+                queue = append(queue, node.Right)
+            }
+        }
+    }
+
+    return res
+}
+```
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func rightSideView(root *TreeNode) []int {
+    // 深度优先dfs解法
+    res := make([]int, 0)
+
+    var dfs func(*TreeNode, int)
+    dfs = func(node *TreeNode, depth int) {
+        if node == nil {
+            return
+        }
+    
+        if depth == len(res) {
+            // 只把每一层第一个节点的值加进去
+            res = append(res, node.Val)
+        }
+		
+        // 先走右子树，所以每一层第一次遇到的节点，一定是最右边的
+        dfs(node.Right, depth+1)
+        dfs(node.Left, depth+1)
+    }
+
+    dfs(root, 0)
+    return res
+}
+```
+
+##### ⭐⭐⭐⭐⭐路径总和3 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+​```
+暴力解法
+对于每个节点：
+    以它为起点
+    往下 DFS
+    统计路径和等于 targetSum 的数量
+    然后对整棵树的每个节点都这样做
+​```
+func pathSum(root *TreeNode, targetSum int) int {
+    // 双递归，时间复杂度 O(n^2)
+    if root == nil {
+        return 0
+    }
+
+    return countSum(root, targetSum) + pathSum(root.Left, targetSum) + pathSum(root.Right, targetSum)
+}
+
+func countSum(node *TreeNode, target int) int {
+    if node == nil {
+        return 0
+    }
+
+    count := 0
+    if node.Val == target {
+        count++
+    }
+
+    count += countSum(node.Left, target-node.Val)
+    count += countSum(node.Right, target-node.Val)
+
+    return count
+}
+```
+
+```go
+​```
+10
+├── 5
+│   ├── 3
+│   │   ├── 3
+│   │   └── -2
+│   └── 2
+│       └── 1
+└── -3
+    └── 11
+target = 8
+
+满足的路径：
+
+5 → 3
+5 → 2 → 1
+-3 → 11
+
+我们定义：
+	前缀和 = 从根到当前节点的路径和
+如果：
+	当前前缀和 - targetSum = 某个之前的前缀和
+说明中间这段路径和就是 targetSum
+
+类似数组的“和为K的子数组”，但这里是树版本
+​```
+func pathSum(root *TreeNode, targetSum int) int {
+    // 最优解：前缀和 + 哈希表，时间复杂度 O(n)
+    // 一定要理解这个prefix，它记录的是某个前缀和出现的次数
+    prefix := make(map[int]int)
+    // 当前前缀和为0的路径有1条，也就是根节点
+    prefix[0] = 1
+
+    return dfs(root, 0, targetSum, prefix)
+}
+
+func dfs (node *TreeNode, curSum int, target int, prefix map[int]int) int {
+    if node == nil {
+        return 0
+    }
+
+    // 当前从根到此节点的路径和
+    curSum += node.Val
+
+    // 代表 和为target的路径 的数量
+    // 这个count如果为0，就代表现在还不存在这样的前缀和
+    count := prefix[curSum - target]
+
+    prefix[curSum]++
+
+    count += dfs(node.Left, curSum, target, prefix)
+    count += dfs(node.Right, curSum, target, prefix)
+
+    // 这里要回溯，当前路径结束后，要撤销当前前缀和，不影响其它分支
+    prefix[curSum]--
+
+    return count
+}
+```
+
+##### ⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅
+
+```go
+​```
+对于每个节点：
+	如果在它的左子树中，找到其中一个目标
+	在它的右子树中，找到另外一个目标
+那它就是最近的公共祖先
+​```
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
+    if root == nil {
+        return nil
+    }
+
+    // 如果当前节点就是 p 或者 q
+    if root == p || root == q {
+        return root
+    }
+
+    left := lowestCommonAncestor(root.Left, p, q)
+    right := lowestCommonAncestor(root.Right, p, q)
+
+    // 如果左右子树都找到目标了
+    if left != nil && right != nil {
+        return root
+    }
+
+    // 只在一边子树找到目标
+    if left != nil {
+        return left
+    }
+
+    return right
+}
+```
+
 
 
 ### 图论（4）
 
 #### Hot 100 例题
 
-##### ⭐⭐ ⭐ ⭐ ⭐  岛屿数量✅😅
+##### ⭐⭐⭐⭐⭐ 岛屿数量✅😅
 
 - DFS深度优先搜索
 
@@ -1108,7 +1517,7 @@ func numIslands(grid [][]byte) int {
 
 #### Hot 100 例题
 
-##### ⭐⭐ ⭐ ⭐ ⭐  全排列 ✅😅
+##### ⭐⭐⭐⭐⭐ 全排列 ✅😅
 
 ```text
 初始状态
@@ -1175,6 +1584,112 @@ func permute(nums []int) [][]int {
 
     backtrack()
     return result
+}
+```
+
+##### ⭐⭐⭐⭐⭐ 子集 ✅😅
+
+```text
+[]
+├── [1]
+│   ├── [1,2]
+│   │   └── [1,2,3]
+│   └── [1,3]
+├── [2]
+│   └── [2,3]
+└── [3]
+```
+
+```go
+​```
+因为每次递归，都是只往后选
+例如 [1,2,3]：
+    选了 1 之后：
+    只能选 2 或 3
+    不会再选回 1
+时间复杂度 O(n * 2^n)，一共 2^n 个子集，每个子集最多复制 n 个元素
+​```
+func subsets(nums []int) [][]int {
+    res := make([][]int, 0)
+    path := make([]int, 0)
+
+    var backtrack func(int)
+    backtrack = func(start int) {
+        temp := make([]int, len(path))
+        copy(temp, path)
+        res = append(res, temp)
+
+        for i := start; i < len(nums); i++ {
+            // 选择一个元素进去
+            path = append(path, nums[i])
+
+            // 这里的回溯条件是 i+1，因为不可以重复，注意和下面的 “组合总数”这道题区分开
+            backtrack(i + 1)
+
+            // 把元素弹出来
+            path = path[:len(path)-1]
+        }
+    }
+
+    backtrack(0)
+    
+    return res
+}
+```
+
+##### ⭐⭐⭐⭐⭐ 组合总和 ✅😅
+
+```text
+candidates = [2,3,6,7], target = 7
+
+[]
+├── 2
+│   ├── 2
+│   │   ├── 2
+│   │   │   ├── 2 (8 ✗)
+│   │   │   ├── 3 (7 ✓)
+│   │   ├── 3 (7 ✓)
+│   ├── 3
+│   ├── 6
+│   ├── 7
+├── 3
+├── 6
+└── 7 (7 ✓)
+
+[2,2,3]
+[7]
+```
+
+```go
+func combinationSum(candidates []int, target int) [][]int {
+    res := make([][]int, 0)
+    path := make([]int, 0)
+
+    var backtrack func(int, int)
+    backtrack = func(start int, sum int) {
+        if sum == target {
+            temp := make([]int, len(path))
+            copy(temp, path)
+            res = append(res, temp)
+            return
+        }
+
+        if sum > target {
+            return
+        }
+
+        for i := start; i < len(candidates); i++ {
+            path = append(path, candidates[i])
+
+            // 这里回溯的条件是 i 而不是 i+1，因为可以重复选同一个数字
+            backtrack(i, sum+candidates[i])
+
+            path = path[:len(path)-1]
+        }
+    }
+
+    backtrack(0, 0)
+    return res
 }
 ```
 
@@ -1406,6 +1921,60 @@ func max(a, b int) int {
     } else {
         return b
     }
+}
+```
+
+##### ⭐⭐⭐⭐⭐零钱兑换 ✅😅
+
+```text
+coins = [1,2,5]
+amount = 11
+
+i :  0  1  2  3  4  5  6  7  8  9  10 11
+dp:  0 12 12 12 12 12 12 12 12 12 12 12
+
+i = 11
+coin=1 → dp[11] = dp[10]+1 = 3
+coin=2 → dp[11] = dp[9]+1 = 4
+coin=5 → dp[11] = dp[6]+1 = 3
+
+最终结果  dp[11] = 3
+```
+
+```go
+func coinChange(coins []int, amount int) int {
+    // 初始化一个长度为 amount+1 的数组
+    dp := make([]int, amount + 1)
+
+    // dp[i]: 凑成金额i所需要的硬币数量
+    for i := 1; i < amount + 1; i++ {
+        dp[i] = amount + 1
+    }
+    dp[0] = 0
+
+    for i := 1; i < amount + 1; i++ {
+        for _, coin := range coins {
+            // 如果 i=2, coin=5, 那就是用5块钱的硬币去凑2块钱，不合法
+            if i - coin >= 0 {
+                // 凑出金额 i, 如果我们选择一个硬币 coin, 那么剩下的金额就是 dp[i-coin]
+                dp[i] = min(dp[i], dp[i-coin] + 1)
+            }
+        }
+    }
+
+    if dp[amount] > amount {
+        return -1
+    }
+
+    return dp[amount]
+}
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    }
+
+    return b
 }
 ```
 
