@@ -1,6 +1,6 @@
 # LeetCode Hot 100
 
-## 刷题攻略
+## 1. 刷题攻略
 
 灵神（python）在B站
 
@@ -8,7 +8,113 @@
 
 代码随想录（B站）
 
-## 高频考点
+## 2. 高频考点（AK）
+
+**LeetCode Hot100 大厂面试刷题策略（华为/腾讯/字节6139篇面经统计）**
+
+核心结论：Hot100 不要按默认顺序从头刷！按真实面试频次优先级刷题，10道高频题可以覆盖大量面试场景；**第 1 名 301 次**，**第 10 名仅仅 79 次**；**Top20 累计覆盖约 70% 手撕算法面试场景**。
+
+数据来源：**汇总华为、腾讯、字节三家共 6139 篇 面试手撕面经**，重新统计 Hot100 真实考察频次
+
+- Hot100 相关题：115道（含平台变体）
+- 至少出现1次：81道（有真实频次数据）
+- 三家样本中未出现：34道（备考优先级最低）
+- 最高频次题目：无重复字符的最长子串（301次）
+⚠️ 备注：样本中未出现 ≠ 完全不考，仅代表本次样本覆盖不足；其他公司考察分布可能不同
+
+### 2.1 🏆 TOP 10｜时间紧张优先必刷清单（最高频）
+
+只准备很短时间，优先攻克这10题
+
+| 排名 | 题目 | 难度 | 出现次数 |
+| :--: | :--- | :--: | :--: |
+| 🥇 1 | 无重复字符的最长子串 | 🟡 Medium | **301 次** |
+| 🥈 2 | LRU 缓存 | 🟡 Medium | **226 次** |
+| 🥉 3 | 数组中第 K 个最大元素 | 🟡 Medium | **138 次** |
+| 4 | 最大子数组和 | 🟡 Medium | 117 次 |
+| 5 | 反转链表 | 🟢 Easy | 112 次 |
+| 6 | 最长递增子序列 | 🟡 Medium | 107 次 |
+| 7 | 有效的括号 | 🟢 Easy | 100 次 |
+| 8 | 岛屿数量 | 🟡 Medium | 94 次 |
+| 9 | K 个一组翻转链表 | 🔴 Hard | 82 次 |
+| 10 | 三数之和 | 🟡 Medium | 79 次 |
+
+重点观察：第1名考察频次 ≈ 第10名 × 4倍
+建议：如果面试只能死磕1道题，优先刷【无重复字符的最长子串】；一面没写出来，二面很大概率继续考察。
+
+### 2.2 🥈 TOP 11–20｜次优先级（2~3周备考加入）
+
+刷完TOP 10后跟进这10题，TOP 20合计覆盖约70%手撕场景
+| 排名 | 题目 | 难度 | 出现次数 |
+| :--: | :--- | :--: | :--: |
+| 11 | 最长回文子串 | 🟡 Medium | 78 次 |
+| 12 | 合并 K 个升序链表 | 🔴 Hard | 74 次 |
+| 13 | 合并区间 | 🟡 Medium | 73 次 |
+| 14 | 删除链表的倒数第 N 个结点 | 🟡 Medium | 68 次 |
+| 15 | 编辑距离 | 🟡 Medium | 64 次 |
+| 16 | 接雨水 | 🔴 Hard | 64 次 |
+| 17 | 合并两个有序链表 | 🟢 Easy | 63 次 |
+| 18 | 二叉树的层序遍历 | 🟡 Medium | 61 次 |
+| 19 | 二叉树的最近公共祖先 | 🟡 Medium | 58 次 |
+| 20 | 买卖股票的最佳时机 | 🟢 Easy | 52 次 |
+
+### 2.3 📚 TOP 21–50｜按章节系统刷题（30道，按算法模块攻坚）
+
+链表、动态规划、二分查找三大模块考察最密集，优先攻克性价比最高
+
+| 优先级 | 算法模块 | 题数 | 涉及题目 |
+| :--: | :--- | :--: | :--- |
+| ⭐⭐⭐ | 🔗 链表 | 5 道 | 环形链表、环形链表 II、相交链表、两数相加、排序链表 |
+| ⭐⭐⭐ | 📊 动态规划 | 6 道 | 零钱兑换、最长公共子序列、爬楼梯、最长有效括号、分割等和子集、最小路径和 |
+| ⭐⭐⭐ | 🔍 二分查找 | 4 道 | 搜索旋转排序数组、在排序数组中查找元素、寻找最小值、中位数 |
+| ⭐⭐ | 🌲 二叉树 | 3 道 | 二叉树右视图、最大路径和、BST 第 K 小元素 |
+| ⭐⭐ | 🔁 回溯 | 2 道 | 全排列、括号生成 |
+| ⭐⭐ | 🪟 滑动窗口 | 2 道 | 滑动窗口最大值、最小覆盖子串 |
+| ⭐⭐ | 🟦 矩阵 | 2 道 | 螺旋矩阵、搜索二维矩阵 II |
+| ⭐ | 📦 数组 / 哈希 / 堆 | 3 道 | 两数之和、寻找重复数、前 K 个高频元素 |
+| ⭐ | 📚 栈 | 2 道 | 字符串解码、最小栈 |
+| ⭐ | 🕸️ 图 | 1 道 | 课程表 |
+
+### 2.4 ❄️ 低频参考｜三家面经样本中频次为0的Hot100题目（放到最后刷）
+
+时间极度紧张时，可以暂时后置
+| 序号 | 第一组 | 第二组 |
+| :--: | :--- | :--- |
+| 1 | 移动零 | 字母异位词分组 |
+| 2 | 只出现一次的数字 | 杨辉三角 |
+| 3 | 完全平方数 | 跳跃游戏 II |
+| 4 | 划分字母区间 | 柱状图中最大的矩形 |
+| 5 | 搜索插入位置 | 搜索二维矩阵 |
+| 6 | 分割回文串 | N 皇后 |
+| 7 | 实现 Trie | 有序数组转 BST |
+| 8 | 二叉树展开为链表 | 路径总和 III |
+| 9 | 随机链表的复制 | 矩阵置零 |
+| 10 | 除自身以外数组的乘积 | 找所有字母异位词 |
+
+### 2.5 ⏱️ 不同备考时长刷题优先级方案
+
+1. 1周以内：只刷 TOP 10，拿下最高频面试题
+2. 2–3周：TOP20 + 链表/动态规划模块补齐，覆盖70%场景
+3. 1个月以上：TOP50 + 按章节系统补齐
+4. 时间充裕：Hot100 全部刷完，建立完整算法知识体系
+
+❌ 常见失败踩坑：按LeetCode原生顺序从头刷（从两数之和开始），刷到一半时间耗尽，LRU、第K大元素、岛屿数量等高频题反而遗漏。
+
+💡 额外重要提醒：ACM模式
+
+字节、腾讯、拼多多等大厂手撕算法普遍采用 ACM模式（需要自己处理输入输出），和LeetCode默认核心代码模式不一样。
+
+- 只刷LeetCode核心代码，上机现场容易翻车
+- 建议：面试前用ACM模式完整过一遍高频Hot100题目
+
+题库信息补充（AK机 Hot100 ACM模式题库）
+
+题库基于近两年7000+大厂技术岗面经整理，按面试频次从高到低排序；支持ACM模式在线刷题，配套核心代码、ACM实现与在线评测。
+题目总量：115题 | 累计练习次数：3074次
+
+
+
+## 3. 高频考点（小红书博主）
 
 1. [最长连续序列](#⭐⭐⭐⭐⭐ 最长连续序列  ✅😅) ✅✅1️⃣
 2. [盛最多水的容器](#⭐⭐⭐⭐ 盛最多水的容器  ✅😅) ✅✅2️⃣
@@ -26,27 +132,30 @@
 14. [二叉树的最大深度](# ⭐⭐二叉树的最大深度 ✅😅) ✅✅1️⃣
 15. [二叉树的层序遍历](# ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅) ✅✅4️⃣
 16. [二叉树的右视图](# ⭐⭐⭐⭐⭐二叉树的右视图 ✅😅) ✅✅4️⃣
-17. [路径总和3](# ⭐⭐⭐⭐⭐路径总和3 ✅😅) ✅5️⃣
-18. [二叉树的最近公共祖先](# ⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅) ✅5️⃣
-19. [岛屿数量](# ⭐⭐⭐⭐⭐ 岛屿数量✅😅) ✅✅1️⃣
+17. [路径总和3](# ⭐⭐⭐⭐⭐路径总和3 ✅😅) ✅✅5️⃣
+18. [二叉树的最近公共祖先](# ⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅) ✅✅5️⃣
+19. [岛屿数量](# ⭐⭐⭐⭐⭐ 岛屿数量✅😅) ✅✅✅1️⃣
 20. [全排列](# ⭐⭐⭐⭐⭐ 全排列 ✅😅) ✅✅1️⃣
-21. [子集](# ⭐⭐⭐⭐⭐ 子集 ✅😅) ✅5️⃣
-22. [组合总和](# ⭐⭐⭐⭐⭐ 组合总和 ✅😅) ✅5️⃣
+21. [子集](# ⭐⭐⭐⭐⭐ 子集 ✅😅) ✅✅5️⃣
+22. [组合总和](# ⭐⭐⭐⭐⭐ 组合总和 ✅😅) ✅✅5️⃣
 23. [搜索插入位置](# ⭐⭐ 搜索插入位置（二分查找）  ✅😀) ✅✅1️⃣
 24. [打家劫舍](# ⭐⭐⭐⭐⭐打家劫舍 ✅😅) ✅✅1️⃣
-25. [零钱兑换](# ⭐⭐⭐⭐⭐零钱兑换 ✅😅) ✅5️⃣
-26. 最长递增子序列
-27. 最小路径和
-28. 最长公共子序列
-29. 下一个排列
+25. [零钱兑换](# ⭐⭐⭐⭐⭐零钱兑换 ✅😅) ✅✅5️⃣
+26. [最长递增子序列](# ⭐⭐⭐⭐⭐最长递增子序列 ✅😅) ✅✅6️⃣
+27. [最小路径和](# ⭐⭐⭐ 最小路径和 ✅😅) ✅✅6️⃣
+28. [最长公共子序列](# ⭐⭐⭐⭐⭐ 最长公共子序列 ✅😅) ✅✅6️⃣
+29. [下一个排列](# ⭐⭐⭐⭐⭐⭐ 下一个排列 ✅😅) ✅✅6️⃣
 
 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣
 
+## 4. 面经来源
 
+1. [LRU缓存](#⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) ✅1️⃣
+2. [螺旋矩阵](# ⭐⭐⭐⭐⭐ 螺旋矩阵  ✅😀) ✅1️⃣
 
-## 题库
+## 5. 题库
 
-### 哈希（3）
+### 5.1 哈希（3）
 
 #### 哈希表理论基础
 
@@ -151,11 +260,11 @@ func longestConsecutive(nums []int) int {
 
 
 
-### 双指针（4）
+### 5.2 双指针（4）
 
 #### Hot 100 例题
 
-##### ⭐ 移动零  ✅😅
+##### 36. ⭐ 移动零  ✅😅
 
 ```go
 func moveZeroes(nums []int)  {
@@ -188,20 +297,20 @@ func moveZeroes(nums []int)  {
             for j < len(nums) && nums[j] == 0 {
                 j++
             }
+            
             // 右边全是0，直接结束
             if j == len(nums) {
                 return
             }
-            temp := nums[j]
-            nums[j] = nums[i]
-            nums[i] = temp
+            
+            nums[i], nums[j] = nums[j], nums[i]
         }
         i++
     }
 }
 ```
 
-##### ⭐⭐⭐⭐ 盛最多水的容器  ✅😅
+##### 37. ⭐⭐⭐⭐ 盛最多水的容器  ✅😅
 
 ```go
 func maxArea(height []int) int {
@@ -233,10 +342,10 @@ func maxArea(height []int) int {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐ 三数之和  ✅😅
+##### 38. ⭐⭐⭐⭐⭐ 三数之和  ✅😅
 
-```go
-​```
+````go
+```
 核心思想：
 	1. 先排序
 	2. 固定一个数 nums[i]
@@ -244,6 +353,18 @@ func maxArea(height []int) int {
 关键点：去重！！！
 时间复杂度：O(n²)
 空间复杂度：O(1)
+
+为什么会有重复？
+假设输入数组：[-1, 0, 1, 2, -1, -4]
+排序后：[-4, -1, -1, 0, 1, 2]
+
+不去重的情况：
+
+当 i = 1 (指向第一个-1) 时，会找到 [-1, 0, 1]
+
+当 i = 2 (指向第二个-1) 时，又会找到 [-1, 0, 1]
+
+这样结果中就会出现两个 [-1, 0, 1]，这不符合题目要求。
 ​```
 import (
     "fmt"
@@ -256,7 +377,9 @@ func threeSum(nums []int) [][]int {
     sort.Ints(nums)
     n := len(nums)
 
-    for i:= 0; i < n-2; i++ {
+    // i < n 和 i < n-2 都可以，都不会出错
+    for i:= 0; i < n; i++ {
+    // for i:= 0; i < n-2; i++ {
         // 如果排序后的第一个元素都大于0，那么后面求和不可能等于0
         if nums[i] > 0 {
             break
@@ -299,12 +422,12 @@ func threeSum(nums []int) [][]int {
 
     return results
 }
+````
+
+##### 39. ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅
+
+````go
 ```
-
-##### ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅
-
-```go
-​```
 使用左右两个指针从两端向中间移动
 每次移动较矮的一边，因为较矮的一边决定了能接多少水
 ​```
@@ -337,11 +460,11 @@ func trap(height []int) int {
 
     return rain
 }
-```
+````
 
 
 
-### 滑动窗口（2）
+### 5.3 滑动窗口（2）
 
 #### Hot 100 例题
 
@@ -369,6 +492,7 @@ func lengthOfLongestSubstring(s string) int {
             maxlen = currentlen
         }
 
+        // 更新 map
         lastseen[ch] = i
     }
     return maxlen
@@ -377,12 +501,12 @@ func lengthOfLongestSubstring(s string) int {
 
 ##### 找到字符串中所有字母异位词 ❌😅
 
-### 子串（3）
+### 5.4 子串（3）
 
 ##### ⭐⭐⭐⭐⭐⭐⭐滑动窗口最大值✅😅
 
-```go
-​```
+````go
+```
 最优解法，时间复杂度 $O(n)$。
 核心思想：维护一个单调递减的双端队列（Double End Queue）
 	队首始终是当前窗口的最大值。
@@ -407,6 +531,7 @@ func maxSlidingWindow(nums []int, k int) []int {
     for i := 0; i < n; i++ {
         // 队首元素出队
         // 把队首不在当前这个窗口的元素弹出
+        // 相当于这个滑动窗口，走过 deque[0] 这个索引了
         if len(deque) > 0 && deque[0] < i-k+1 {
             deque = deque[1:]
         }
@@ -414,6 +539,8 @@ func maxSlidingWindow(nums []int, k int) []int {
         // 队尾元素出队
         // 遍历这个队列，把队尾所有小于当前元素的索引，全部弹出
         // 因为这些元素不可能成为后面窗口的最大值
+        // 这个一定要 for，不能 if
+        // 第一个才是 if
         for len(deque) > 0 && nums[deque[len(deque)-1]] < nums[i] {
             deque = deque[:len(deque)-1]
         }
@@ -423,6 +550,7 @@ func maxSlidingWindow(nums []int, k int) []int {
 
         // 队首元素加入results
         // 从第k-1个元素开始，窗口形成
+        // 假设 n = 8, k = 3, 也就是说，窗口从 i = 2 的时候形成
         if i >= k-1 {
             results[i-k+1] = nums[deque[0]]
         }
@@ -430,7 +558,7 @@ func maxSlidingWindow(nums []int, k int) []int {
 
     return results
 }
-```
+````
 
 ##### ⭐⭐⭐⭐⭐⭐⭐最小覆盖子串✅😅
 
@@ -502,7 +630,7 @@ func minWindow(s string, t string) string {
 
 
 
-### 普通数组（5）
+### 5.5 普通数组（5）
 
 #### Hot 100 例题
 
@@ -582,7 +710,7 @@ func merge(intervals [][]int) [][]int {
 
 
 
-### 矩阵（4）
+### 5.6 矩阵（4）
 
 #### Hot 100 例题
 
@@ -651,10 +779,85 @@ func setZeroes(matrix [][]int)  {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐ 搜索二维矩阵2  ✅😀
+##### ⭐⭐⭐⭐⭐ 螺旋矩阵  ✅😀
 
 ```go
-​```
+func spiralOrder(matrix [][]int) []int {
+    m, n := len(matrix), len(matrix[0])
+
+    // 初始化4个方向边界
+    left, right := 0, n - 1
+    top, bottom := 0, m - 1
+
+    res := []int{}
+
+    for left <= right && top <= bottom {
+
+        // 左 → 右
+        for col := left; col <= right; col++ {
+            res = append(res, matrix[top][col])
+        }
+        top++
+        
+        // 上 ↓ 下
+        for row := top; row <= bottom; row++ {
+            res = append(res, matrix[row][right])
+        }
+        right--
+
+        // 要注意这两个if条件，一定不能写反
+        // 可以这样理解: 4个循环分别消耗的是 top right bottom left
+        // 右 ← 左
+        if top <= bottom {
+            for col := right; col >= left; col-- {
+                res = append(res, matrix[bottom][col])
+            }
+            bottom--
+        }
+
+        // 下 ↑ 上
+        if left <= right {
+            for row := bottom; row >= top; row-- {
+                res = append(res, matrix[row][left])
+            }
+            left++
+        }
+    }
+
+    return res
+}
+```
+
+##### ⭐⭐⭐⭐⭐ 旋转图像  ✅😀
+
+```go
+func rotate(matrix [][]int) {
+    n := len(matrix)
+
+    // 先转置
+    for i := 0; i < n; i++ {
+        // 注意，这里的 j 一定要是从 i + 1 开始，否则会转置两次，白干
+        for j := i + 1; j < n; j++ {
+            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+        }
+    }
+
+    // 再将每一行，按照"水平翻转"
+    for i := 0; i < n; i++ {
+        left, right := 0, n - 1
+        for left < right {
+            matrix[i][left], matrix[i][right] = matrix[i][right], matrix[i][left]
+            left++
+            right--
+        }
+    }
+}
+```
+
+##### ⭐⭐⭐⭐⭐ 搜索二维矩阵2  ✅😀
+
+````go
+```
 z字形查找-从右上角开始
 	时间复杂度 O(m + n) --- 最优解
 逐行二分
@@ -685,11 +888,11 @@ func searchMatrix(matrix [][]int, target int) bool {
 
     return false
 }
-```
+````
 
 
 
-### 链表（14）
+### 5.7 链表（14）
 
 #### 链表理论基础
 
@@ -697,7 +900,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 
 #### Hot 100 例题
 
-##### ⭐⭐ 相交链表 ✅😅
+##### 3. ⭐⭐ 相交链表 ✅✅😅
 
 ```go
 /**
@@ -780,7 +983,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 }
 ```
 
-##### ⭐⭐⭐反转链表 ✅😅
+##### 4. ⭐⭐⭐反转链表 ✅✅😅
 
 ```go
 /**
@@ -806,7 +1009,7 @@ func reverseList(head *ListNode) *ListNode {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐回文链表 ✅😅
+##### 5. ⭐⭐⭐⭐⭐回文链表 ✅✅😅
 
 ```go
 /**
@@ -899,7 +1102,7 @@ func isPalindrome(head *ListNode) bool {
 }
 ```
 
-##### ⭐⭐⭐环形链表 ✅😅
+##### 6. ⭐⭐⭐环形链表 ✅✅😅
 
 ```go
 /**
@@ -930,7 +1133,43 @@ func hasCycle(head *ListNode) bool {
 }
 ```
 
-##### ⭐⭐⭐合并两个有序链表 ✅😅
+##### 14. ⭐⭐⭐环形链表2 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func detectCycle(head *ListNode) *ListNode {
+    if head == nil {
+        return nil
+    }
+
+    p := head
+    // 这里注意，快慢指针一定要一致，如果和上面的一样，就容易死循环
+    fast, slow := head, head
+    for fast != nil && fast.Next != nil {
+        fast = fast.Next.Next
+        slow = slow.Next
+
+        if fast == slow {
+            for slow != p {
+                p = p.Next
+                slow = slow.Next
+            }
+            return p
+        }
+
+    }
+
+    return nil
+}
+```
+
+##### 2. ⭐⭐⭐ 合并两个有序链表 ✅✅😅
 
 ```go
 /**
@@ -941,6 +1180,9 @@ func hasCycle(head *ListNode) bool {
  * }
  */
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+    // 这里一定要注意：
+    // var dummy *ListNode 这种写法是错误的，此时它仅仅是一个nil，访问cur.Next会崩溃
+    // dummy := &ListNode{} 代表已经为虚拟头结点dummy分配好了内存空间
     dummy := &ListNode{}
     cur := dummy
 
@@ -970,7 +1212,83 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐两两交换链表中的节点 ✅😅
+##### 15. ⭐⭐⭐两数相加 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+    dummy := &ListNode{}
+    cur := dummy
+    
+    // 处理进位
+    carry := 0
+
+    p1, p2 := l1, l2
+
+    // 一定要注意，carry必须得作为一个条件，有进位就新建一个节点
+    for p1 != nil || p2 != nil || carry != 0 {
+        sum := carry
+
+        if p1 != nil {
+            sum += p1.Val
+            p1 = p1.Next
+        }
+
+        if p2 != nil {
+            sum += p2.Val
+            p2 = p2.Next
+        }
+
+        cur.Next = &ListNode{Val: sum % 10}
+        carry = sum / 10
+
+        cur = cur.Next
+    }
+
+    return dummy.Next
+}
+```
+
+##### 16. ⭐⭐⭐⭐删除链表的倒数第 N 个结点 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
+    // 虚拟头结点方便删除头节点操作
+    dummy := &ListNode{Next: head}
+
+    // 双指针，fast先走n步，一定要注意初始化都是虚拟头节点
+    fast, slow := dummy, dummy
+    for i := 0; i < n; i++ {
+        fast = fast.Next
+    }
+
+    // 下面那个slow实际上是要删除节点的前一个节点
+    for fast.Next != nil {
+        fast = fast.Next
+        slow = slow.Next
+    }
+
+    slow.Next = slow.Next.Next
+
+    return dummy.Next
+}
+
+```
+
+##### 11. ⭐⭐⭐⭐⭐两两交换链表中的节点 ✅😅
 
 ```go
 /**
@@ -1007,7 +1325,22 @@ func swapPairs(head *ListNode) *ListNode {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅
+##### 12. ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅
+
+````go
+```
+1. 初始状态：5 个变量
+	prevGroupEnd := dummy
+	
+	kth := prevGroupEnd
+	nextGroupStart := kth.Next
+	
+	groupStart := prevGroup.Next
+	newGroupHead := reverse(groupStart)
+2. 过程
+	4 3 2 1
+​```
+````
 
 ```go
 /**
@@ -1019,12 +1352,14 @@ func swapPairs(head *ListNode) *ListNode {
  */
 func reverseKGroup(head *ListNode, k int) *ListNode {
     // 虚拟节点
-        dummy := &ListNode{Next: head}
+    dummy := &ListNode{Next: head}
 
     prevGroupEnd := dummy
     for {
-        // 1. 按照K个进行分组
+        // 4. 分组
+		// 初始化kth
         kth := prevGroupEnd
+        // 按照K个进行分组
         for i := 0; i < k && kth != nil; i++ {
             kth = kth.Next
         }
@@ -1037,16 +1372,16 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
         // 下一组的起始节点
         nextGroupStart := kth.Next
 
-        // 2. 先断链，再翻转组内元素
+        // 3. 先断链，再翻转组内元素
         kth.Next = nil
         groupStart := prevGroupEnd.Next
         newGroupHead := reverse(groupStart)
 
-        // 3. 将翻转后的新group接回去
+        // 2. 将翻转后的新group接回去
         prevGroupEnd.Next = newGroupHead
         groupStart.Next = nextGroupStart
 
-        // 4. 继续翻转下一组，前一组的开始节点，已经变成了“前一组”的结束节点
+        // 1. 继续翻转下一组，前一组的开始节点，已经变成了“前一组”的结束节点
         prevGroupEnd = groupStart
     }
 
@@ -1069,13 +1404,281 @@ func reverse(head *ListNode) *ListNode {
 }
 ```
 
+##### 17. ⭐⭐⭐⭐⭐⭐随机链表的复制 ✅😅
+
+```go
+/**
+ * Definition for a Node.
+ * type Node struct {
+ *     Val int
+ *     Next *Node
+ *     Random *Node
+ * }
+ */
+func copyRandomList(head *Node) *Node {
+    if head == nil {
+        return nil
+    }
+
+    // 哈希表法
+    nodeMap := make(map[*Node]*Node)
+
+    cur := head
+    for cur != nil {
+        nodeMap[cur] = &Node{Val: cur.Val}
+        cur = cur.Next
+    }
+
+    cur = head
+    for cur != nil {
+        nodeMap[cur].Next = nodeMap[cur.Next]
+        nodeMap[cur].Random = nodeMap[cur.Random]
+        cur = cur.Next
+    }
+
+    return nodeMap[head]
+}
+```
+
+##### 18. ⭐⭐⭐⭐⭐⭐排序链表 ✅😅
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+func sortList(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil {
+        return head
+    }
+
+    // 找到中点
+    var prev *ListNode
+    fast, slow := head, head
+    for fast != nil && fast.Next != nil {
+        prev = slow 
+        slow = slow.Next
+        fast = fast.Next.Next
+    }
+
+    // 断开链表
+    prev.Next = nil
+
+    // 归并排序
+    left := sortList(head)
+    right := sortList(slow)
+
+    // 合并排序好的链表
+    return mergeTwoList(left, right)
+}
+
+// 合并两个有序链表
+func mergeTwoList(head1, head2 *ListNode) *ListNode {
+    dummy := &ListNode{}
+    cur := dummy
+
+    for head1 != nil && head2 != nil {
+        if head1.Val < head2.Val {
+            cur.Next = head1
+            head1 = head1.Next
+        } else {
+            cur.Next = head2
+            head2 = head2.Next
+        }
+
+        cur = cur.Next
+    }
+
+    if head1 != nil {
+        cur.Next = head1
+    }
+
+    if head2 != nil {
+        cur.Next = head2
+    }
+
+    return dummy.Next
+}
+```
+
+##### 19. ⭐⭐⭐⭐⭐⭐合并 K 个升序链表 ✅😅
+
+````go
+```
+假设初始 8 个有序链表
+	L1 L2 L3 L4 L5 L6 L7 L8
+第一轮两两合并：
+	merge(L1,L2)  merge(L3,L4)  merge(L5,L6)  merge(L7,L8)
+	A1 A2 A3 A4
+第二轮：
+	merge(A1,A2)  merge(A3,A4)
+	B1 B2
+第三轮：
+	merge(B1,B2)
+得到最终链表
+​```
+func mergeKLists(lists []*ListNode) *ListNode {
+    // 0 个链表
+    if len(lists) == 0 {
+        return nil
+    }
+
+    // 大于 1 个链表
+    // 本质是分治法，采用迭代实现
+    for len(lists) > 1 {
+        newLists := []*ListNode {}
+        // 类似归并排序，把 K 个链表，两两合并
+        for i := 0; i < len(lists); i += 2 {
+            if i+1 < len(lists) {
+                newLists = append(newLists, mergeTwoList(lists[i], lists[i+1]))
+            } else {
+                newLists = append(newLists, lists[i])
+            }
+        }
+        lists = newLists
+    }
+
+    // 1 个链表
+    return lists[0]
+}
+
+func mergeTwoList(p1, p2 *ListNode) *ListNode {
+    dummy := &ListNode{}
+    cur := dummy
+
+    for p1 != nil && p2 != nil {
+        if p1.Val < p2.Val {
+            cur.Next = p1
+            p1 = p1.Next
+        } else {
+            cur.Next = p2
+            p2 = p2.Next
+        }
+
+        cur = cur.Next
+    }
+
+    if p1 != nil {
+        cur.Next = p1
+    }
+
+    if p2 != nil {
+        cur.Next = p2
+    }
+
+    return dummy.Next
+}
+````
+
+##### 13. ⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅
+
+```go
+type Node struct {
+    key int
+    value int
+    prev *Node
+    next *Node
+}
+
+type LRUCache struct {
+    capacity int
+    cache map[int]*Node
+    head *Node
+    tail *Node
+}
 
 
-### 二叉树（15）
+func Constructor(capacity int) LRUCache {
+    head := &Node{}
+    tail := &Node{}
+    head.next = tail
+    tail.prev = head
+    return LRUCache{
+        capacity: capacity,
+        cache: make(map[int]*Node),
+        head: head,
+        tail: tail,
+    }
+}
+
+
+func (this *LRUCache) Get(key int) int {
+    if node, ok := this.cache[key]; ok {
+        // 把这个移动到头节点
+        this.moveToHead(node)
+        return node.value
+    }
+
+    return -1
+}
+
+
+func (this *LRUCache) Put(key int, value int) {
+    if node, ok := this.cache[key]; ok {
+        // 如果key已存在，则更新value的值
+        node.value = value
+        // 把更新后的节点作为头节点
+        this.moveToHead(node)
+    } else {
+        // 如果key不存在，则创建一个新的节点
+        node := &Node{
+            key: key,
+            value: value,
+        }
+        this.cache[key] = node
+        this.addToHead(node)
+
+        // 超出容量，则移除
+        if len(this.cache) > this.capacity {
+            removed := this.removeTail()
+            delete(this.cache, removed.key)
+        }
+    }
+}
+
+func (this *LRUCache) moveToHead(node *Node) {
+    this.remove(node)
+    this.addToHead(node)
+}
+
+func (this *LRUCache) addToHead(node *Node) {
+    // 整体节点都是先prev再next
+    node.prev = this.head
+    node.next = this.head.next
+    this.head.next.prev = node
+    this.head.next = node
+}
+
+func (this *LRUCache) removeTail() *Node {
+    node := this.tail.prev
+    this.remove(node)
+    return node
+}
+
+func (this *LRUCache) remove(node *Node) {
+    node.prev.next = node.next
+    node.next.prev = node.prev
+}
+
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * obj := Constructor(capacity);
+ * param_1 := obj.Get(key);
+ * obj.Put(key,value);
+ */
+```
+
+
+
+### 5.8 二叉树（15）
 
 #### Hot 100 例题
 
-##### ⭐⭐⭐二叉树的中序遍历 ✅😅
+##### 7. ⭐⭐⭐二叉树的中序遍历 ✅✅😅
 
 ```go
 /**
@@ -1094,6 +1697,8 @@ func inorderTraversal(root *TreeNode) []int {
 
     // 使用递归方法实现（代码很简单，但是还是要好好思考一下递归调用的过程）
     res := []int{}
+    // 下面这种写法也行
+    // res := make([]int, 0)
     res = append(res, inorderTraversal(root.Left)...)
     res = append(res, root.Val)
     res = append(res, inorderTraversal(root.Right)...)
@@ -1140,7 +1745,7 @@ func inorderTraversal(root *TreeNode) []int {
 }
 ```
 
-##### ⭐⭐二叉树的最大深度 ✅😅
+##### 8. ⭐⭐二叉树的最大深度 ✅✅😅
 
 ```go
 /**
@@ -1168,7 +1773,7 @@ func maxDepth(root *TreeNode) int {
 }
 ```
 
-##### ⭐⭐ 翻转二叉树✅😅
+##### 9. ⭐⭐ 翻转二叉树✅✅😅
 
 ```go
 /**
@@ -1193,7 +1798,78 @@ func invertTree(root *TreeNode) *TreeNode {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅
+##### 10. ⭐⭐⭐⭐⭐对称二叉树 ✅✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func isSymmetric(root *TreeNode) bool {
+    if root == nil {
+        return true
+    }
+
+    return isMirror(root.Left, root.Right)
+}
+
+func isMirror(left, right *TreeNode) bool {
+    if left == nil && right == nil {
+        return true
+    }
+
+    if left == nil || right == nil {
+        return false
+    }
+
+    if left.Val != right.Val {
+        return false
+    }
+
+    return isMirror(left.Left, right.Right) && isMirror(left.Right, right.Left)
+}
+```
+
+##### 20. ⭐⭐⭐⭐⭐二叉树的直径 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func diameterOfBinaryTree(root *TreeNode) int {
+    maxDiameter := 0
+
+    var depth func(*TreeNode) int
+    depth = func(node *TreeNode) int {
+        if node == nil {
+            return 0
+        }
+
+        leftDepth := depth(node.Left)
+        rightDepth := depth(node.Right)
+
+        if (leftDepth + rightDepth) > maxDiameter {
+            maxDiameter = leftDepth + rightDepth
+        }
+
+        return max(leftDepth, rightDepth) + 1
+    }
+
+    depth(root)
+    return maxDiameter
+}
+```
+
+##### 21. ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅
 
 ```go
 /**
@@ -1239,7 +1915,129 @@ func levelOrder(root *TreeNode) [][]int {
 }
 ```
 
-##### ⭐⭐⭐⭐⭐二叉树的右视图 ✅😅
+##### 22. ⭐⭐将有序数组转换为二叉搜索树 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func sortedArrayToBST(nums []int) *TreeNode {
+    if len(nums) == 0 {
+        return nil
+    }
+
+    mid := len(nums) / 2
+    root := &TreeNode{Val: nums[mid]}
+
+    root.Left = sortedArrayToBST(nums[:mid])
+    root.Right = sortedArrayToBST(nums[mid+1:])
+
+    return root
+}
+```
+
+##### 23. ⭐⭐⭐⭐⭐验证二叉搜索树 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func isValidBST(root *TreeNode) bool {
+    return validate(root, nil, nil)
+}
+
+func validate(root *TreeNode, min *int, max *int) bool {
+    if root == nil {
+        return true
+    }
+
+    if min != nil && root.Val <= *min {
+        return false
+    }
+    
+    if max != nil && root.Val >= *max {
+        return false
+    }
+    
+    // 递归验证左右子树，更新边界
+    // 左子树的所有节点必须小于当前节点值
+    // 右子树的所有节点必须大于当前节点值
+    return validate(root.Left, min, &root.Val) && validate(root.Right, &root.Val, max)
+}
+```
+
+##### 24. ⭐⭐二叉搜索树中第 K 小的元素 ✅😅
+
+```go
+// 递归中序遍历
+func kthSmallest(root *TreeNode, k int) int {
+    result := 0
+    count := 0
+
+    var inOrder func(*TreeNode)
+    inOrder = func(root *TreeNode) {
+        if root == nil || count == k {
+            return
+        }
+
+        inOrder(root.Left)
+
+        count++
+        if count == k {
+            result = root.Val
+        }
+
+        inOrder(root.Right)
+    }
+
+    inOrder(root)
+
+    return result
+}
+```
+
+```go
+// 堆栈中序遍历
+func kthSmallest(root *TreeNode, k int) int {
+    result := 0
+    count := 0
+
+    stack := make([]*TreeNode, 0)
+    p := root
+
+    for p != nil || len(stack) > 0 {
+        for p != nil {
+            stack = append(stack, p)
+            p = p.Left
+        }
+
+        n := len(stack) - 1
+        node := stack[n]
+        stack = stack[:n]
+
+        count++
+        if count == k {
+            result = node.Val
+        }
+
+        p = node.Right
+    }
+
+    return result
+}
+```
+
+##### 25. ⭐⭐⭐⭐⭐二叉树的右视图 ✅😅
 
 ```go
 /**
@@ -1319,6 +2117,127 @@ func rightSideView(root *TreeNode) []int {
 }
 ```
 
+##### ⭐⭐⭐⭐⭐二叉树展开为链表 ✅😅
+
+````go
+```
+最优解：原地算法
+
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+
+执行过程：
+current = 1
+
+左子树存在，找到左子树最右节点 4
+
+将 1 的右子树 5 接到 4 的右边
+
+将左子树 2 移到右边
+
+text
+1
+ \
+  2
+ / \
+3   4
+     \
+      5
+       \
+        6
+​```
+func flatten(root *TreeNode)  {
+    current := root
+
+    for current != nil {
+        // 找到左子树下面的最右节点
+        if current.Left != nil {
+            predecessor := current.Left
+            for predecessor.Right != nil {
+                predecessor = predecessor.Right
+            }
+
+            // 将当前节点的右子树放到 左子树下面的最右节点 的右边
+            predecessor.Right = current.Right
+
+            // 将左子树移到右边
+            current.Right = current.Left
+            current.Left = nil
+        }
+
+        current = current.Right
+    }
+}
+````
+
+##### ⭐⭐⭐⭐⭐从前序与中序遍历序列构造二叉树 ✅😅
+
+```go
+// 先序遍历：根 左 右
+// 中序遍历：左 根 右
+func buildTree(preorder []int, inorder []int) *TreeNode {
+    if len(preorder) == 0 {
+        return nil
+    }
+
+    rootVal := preorder[0]
+    root := &TreeNode{Val: rootVal}
+
+    index := 0
+    for i, val := range inorder {
+        if val == rootVal {
+            index = i
+            break
+        }
+    }
+
+    // 分别递归构造左右子树
+    root.Left = buildTree(preorder[1:index+1], inorder[:index])
+    root.Right = buildTree(preorder[index+1:], inorder[index+1:])
+
+    return root
+}
+```
+
+```go
+func buildTree(preorder []int, inorder []int) *TreeNode {
+    // 构造中序遍历的哈希表
+    inorderMap := make(map[int]int, 0)
+    for i, val := range inorder {
+        inorderMap[val] = i
+    }
+
+    // 使用全局变量或闭包来追踪先序遍历的当前位置
+    preIndex := 0
+
+    var build func(int, int) *TreeNode
+    build = func(left, right int) *TreeNode {
+        if left > right {
+            return nil
+        }
+
+        // 获取当前根节点的值
+        rootVal := preorder[preIndex]
+        preIndex++
+        root := &TreeNode{Val: rootVal}
+
+        // 在中序遍历Map中找到 根节点的位置
+        rootIndex := inorderMap[rootVal]
+
+        // 构建左右子树
+        root.Left = build(left, rootIndex-1)
+        root.Right = build(rootIndex+1, right)
+
+        return root
+    }
+
+    return build(0, len(inorder)-1)
+}
+```
+
 ##### ⭐⭐⭐⭐⭐路径总和3 ✅😅
 
 ```go
@@ -1364,8 +2283,8 @@ func countSum(node *TreeNode, target int) int {
 }
 ```
 
-```go
-​```
+````go
+```
 10
 ├── 5
 │   ├── 3
@@ -1423,12 +2342,12 @@ func dfs (node *TreeNode, curSum int, target int, prefix map[int]int) int {
 
     return count
 }
+````
+
+##### ⭐⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅
+
+````go
 ```
-
-##### ⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅
-
-```go
-​```
 对于每个节点：
 	如果在它的左子树中，找到其中一个目标
 	在它的右子树中，找到另外一个目标
@@ -1459,19 +2378,63 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
     return right
 }
+````
+
+##### ⭐⭐⭐⭐⭐ 二叉树中的最大路径和 ✅😅
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func maxPathSum(root *TreeNode) int {
+    maxSum := root.Val
+
+    // 计算以当前节点为起点的，最大单边路径和
+    var dfs func(*TreeNode) int
+    dfs = func(root *TreeNode) int {
+        if root == nil {
+            return 0
+        }
+
+        // 递归计算左右子树的单边最大路径和
+        left := max(0, dfs(root.Left))
+        right := max(0, dfs(root.Right))
+
+        // 当前节点的路径和 = val + left + right
+        // 更新全局最大路径和
+        maxSum = max(maxSum, root.Val + left + right)
+
+        // 返回单边路径最大和
+        return root.Val + max(left, right)
+    }
+
+    dfs(root)
+
+    return maxSum
+}
 ```
 
 
 
-### 图论（4）
+### 5.9 图论（4）
 
 #### Hot 100 例题
 
-##### ⭐⭐⭐⭐⭐ 岛屿数量✅😅
+##### 1. ⭐⭐⭐⭐⭐ 岛屿数量✅✅😅
 
 - DFS深度优先搜索
 
-```go
+````go
+```
+时间复杂度：O(m*n)
+空间复杂度：O(m*n)，也就是最坏情况下，都是陆地'1'，没有水
+​```
+
 func numIslands(grid [][]byte) int {
     if len(grid) == 0 {
         return 0
@@ -1505,7 +2468,7 @@ func numIslands(grid [][]byte) int {
 
     return count
 }
-```
+````
 
 - BFS广度优先搜索
 
@@ -1513,7 +2476,7 @@ func numIslands(grid [][]byte) int {
 
 - DFS + 辅助矩阵标记
 
-### 回溯（8）
+### 5.10 回溯（8）
 
 #### Hot 100 例题
 
@@ -1600,8 +2563,8 @@ func permute(nums []int) [][]int {
 └── [3]
 ```
 
-```go
-​```
+````go
+```
 因为每次递归，都是只往后选
 例如 [1,2,3]：
     选了 1 之后：
@@ -1635,7 +2598,7 @@ func subsets(nums []int) [][]int {
     
     return res
 }
-```
+````
 
 ##### ⭐⭐⭐⭐⭐ 组合总和 ✅😅
 
@@ -1695,7 +2658,7 @@ func combinationSum(candidates []int, target int) [][]int {
 
 
 
-### 二分查找（6）
+### 5.11 二分查找（6）
 
 #### Hot 100 例题
 
@@ -1724,8 +2687,8 @@ func searchInsert(nums []int, target int) int {
 
 ##### ⭐⭐⭐ 搜索二维矩阵  ✅😀
 
-```go
-​```
+````go
+```
 二维数组一维化
 时间复杂度 O(log(m×n))
 ​```
@@ -1756,11 +2719,78 @@ func searchMatrix(matrix [][]int, target int) bool {
 
     return false
 }
+````
+
+##### ⭐⭐⭐⭐⭐ 在排序数组中查找元素的第一个和最后一个位置  ✅😅
+
+```go
+func searchRange(nums []int, target int) []int {
+    leftIndex := binarySearch(nums, target)
+    rightIndex := binarySearch(nums, target+1) - 1
+
+    if leftIndex == len(nums) || nums[leftIndex] != target {
+        return []int {-1, -1}
+    }
+    
+    return []int {leftIndex, rightIndex}
+}
+
+func binarySearch(nums []int, target int) int {
+    left, right := 0, len(nums)-1
+
+    for left <= right {
+        mid := (left + right) / 2
+
+        // 二分查找范围，一定不要返回 mid 值
+        // 这里一定是先 <
+        // 如果是 >，那就会边界全错
+        if nums[mid] < target {
+            left = mid + 1
+        } else{
+            right = mid - 1
+        }
+    }
+
+    return left
+}
 ```
 
+##### ⭐⭐⭐⭐⭐ 搜索旋转排序数组  ✅😅
 
+```go
+func search(nums []int, target int) int {
+    left, right := 0, len(nums)-1
 
-### 栈（5）
+    for left <= right {
+        mid := (left + right) / 2
+
+        if nums[mid] == target {
+            return mid
+        }
+
+        // 先判断左右哪边有序
+        // 
+        if nums[left] <= nums[mid] {
+            if target >= nums[left] && target < nums[mid] {
+                right = mid - 1
+            } else {
+                left = mid + 1
+            }
+        } else {
+            if target <= nums[right] && target > nums[mid] {
+                left = mid + 1
+            } else {
+                right = mid - 1
+            }
+        }
+
+    }
+
+    return -1
+}
+```
+
+### 5.12 栈（5）
 
 #### Hot 100 例题
 
@@ -1800,9 +2830,60 @@ func isValid(s string) bool {
 }
 ```
 
-### 堆（3）
+### 5.13 堆（3）
 
-### 贪心算法（4）
+##### ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅
+
+```go
+// O(n)时间复杂度，主要原因就是只对一边排序
+// 而不是对左右两侧同时排序
+func findKthLargest(nums []int, k int) int {
+    rand.Seed(time.Now().UnixNano())
+
+    return quickSelect(nums, 0, len(nums)-1, k)
+}
+
+func quickSelect(nums []int, left, right, k int) int {
+    if left == right {
+        return nums[left]
+    }
+
+    // 随机初始化枢轴元素，避免全部处在最坏的位置，导致算法时间复杂度从 O(n) 退化到 O(n^2)
+    pivotIndex := left + rand.Intn(right-left+1)
+    nums[pivotIndex], nums[right] = nums[right], nums[pivotIndex]
+
+    // 类似快拍
+    newPivotIndex := partition(nums, left, right)
+
+    if newPivotIndex == k-1 {
+        return nums[newPivotIndex]
+    } else if newPivotIndex > k - 1 {
+        return quickSelect(nums, left, newPivotIndex-1, k)
+    } else {
+        return quickSelect(nums, newPivotIndex+1, right, k)
+    }
+}
+
+func partition(nums []int, left, right int) int {
+    pivot := nums[right]
+
+    i := left
+    for j := left; j < right; j++ {
+        // 将所有大于 pivot 的元素，全放到左侧
+        if nums[j] > pivot {
+            nums[i], nums[j] = nums[j], nums[i]
+            i++
+        }
+    }
+
+    // 这个一定不能忘记！
+    nums[i], nums[right] = nums[right], nums[i]
+
+    return i
+}
+```
+
+### 5.14 贪心算法（4）
 
 #### Hot 100 例题
 
@@ -1835,7 +2916,7 @@ func maxProfit(prices []int) int {
 }
 ```
 
-### 动态规划（10）
+### 5.15 动态规划（10）
 
 #### Hot 100 例题
 
@@ -1978,13 +3059,213 @@ func min(a, b int) int {
 }
 ```
 
+##### ⭐⭐⭐⭐⭐最长递增子序列 ✅😅
+
+```text
+子序列
+	👉 从原数组中 按顺序挑选一些元素
+	👉 可以不连续
+	👉 但不能改变相对顺序
+	
+[0,3,1,6,2,2,7]
+合法子序列
+[3,6,2,7]   ✅
+[0,1,2,7]   ✅
+[0,6,7]     ✅
+
+严格递增 = 后一个数必须 大于 前一个数
+
+最长严格递增子序列
+[10,9,2,5,3,7,101,18]
+最大长度 = 4
+[2,5,7,101]   长度4
+[2,3,7,18]    长度4
+```
+
+```go
+// 时间复杂度 O(n^2)
+func lengthOfLIS(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+
+    dp := make([]int, len(nums))
+
+    // 初始化一个全为1的dp数组
+    // dp[i]代表指针走到i这个位置，当前的最长递增子序列的长度
+    for i := 0; i < len(nums); i++ {
+        dp[i] = 1
+    }
+
+    // 注意这里 maxLen 初始为 1 而不是 0
+    maxLen := 1
+
+    // 注意这里的边界，i=1 和 i=0 在这道题里面都没问题，但是 i=1 逻辑更清晰
+    for i := 1; i < len(nums); i++ {
+        for j := 0; j < i; j++ {
+            // 以 nums[i]为基准，判断所有 i 前面的元素
+            // 凡是 nums[i] > nums[j]，就代表 nums[i] 这个元素满足严格递增子序列
+            if nums[j] < nums[i] {
+                // 更新子序列长度
+                dp[i] = max(dp[i], dp[j] + 1)
+            }
+        }
+        maxLen = max(maxLen, dp[i])
+    }
+
+    return maxLen
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+
+    return b
+}
+```
+
+```text
+[10,9,2,5,3,7,101,18]
+
+[10]
+[9]
+[2]
+[2,5]
+[2,3]
+[2,3,7]
+[2,3,7,101]
+[2,3,7,18]
+
+最终长度 = 4
+```
+
+```go
+// 贪心 + 二分（O(n log n)）
+import (
+    "sort"
+)
+
+func lengthOfLIS(nums []int) int {
+    if len(nums) == 0 {
+        return 0
+    }
+
+    // 核心思想是维护这个递增子序列的最小尾巴
+    // 尾巴越小越有希望append新元素，从而达到最长
+    tails := []int{}
+
+    for _, num := range nums {
+        // 寻找num在tails中的插入位置
+        i := sort.SearchInts(tails, num)
+
+        if i == len(tails) {
+            // 说明 num 大于 tail 中的所有元素，放到 tail 尾部
+            tails = append(tails, num)
+        } else {
+            // 替换掉第一个 >= num的值
+            tails[i] = num
+        }
+    }
+
+    return len(tails)
+}
+```
 
 
-### 多维动态规划（5）
 
-### 技巧（5）
+### 5.16 多维动态规划（5）
 
-##### ⭐⭐只出现一次的数字✅😅
+#### Hot 100 例题
+
+##### ⭐⭐⭐ 最小路径和 ✅😅
+
+```go
+func minPathSum(grid [][]int) int {
+    m, n := len(grid), len(grid[0])
+
+    dp := make([][]int, m)
+    for i := 0; i < m; i++ {
+        dp[i] = make([]int, n)
+    }
+
+    dp[0][0] = grid[0][0]
+
+    // 初始化第一行
+    for j := 1; j < n; j++ {
+        dp[0][j] = dp[0][j-1] + grid[0][j]
+    }
+
+    // 初始化第一列
+    for i := 1; i < m; i++ {
+        dp[i][0] = dp[i-1][0] + grid[i][0]
+    }
+
+    // 填表
+    for i := 1; i < m; i++ {
+        for j := 1; j < n; j++ {
+            dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+        }
+    }
+
+    return dp[m-1][n-1]
+}
+
+func min(a, b int) int {
+    if a > b {
+        return b
+    }
+
+    return a
+}
+```
+
+##### ⭐⭐⭐⭐⭐ 最长公共子序列 ✅😅
+
+```go
+func longestCommonSubsequence(text1 string, text2 string) int {
+    m, n := len(text1), len(text2)
+
+    // dp[i][j]表示
+    //   text1 的前 i 个字符
+    //   text2 的前 j 个字符
+    // 的最长公共子序列长度
+    dp := make([][]int, m + 1)
+    for i := 0; i < m + 1; i++ {
+        dp[i] = make([]int, n + 1)
+    }
+
+    for i := 1; i < m + 1; i++ {
+        for j := 1; j < n + 1; j++ {
+            if text1[i-1] == text2[j-1] {
+                // 相等，就说明这个字符可以加入公共子序列
+                dp[i][j] = dp[i-1][j-1] + 1
+            } else {
+                // 不相等，就只能 不用text1当前字符 || 不用text2当前字符，取最大
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+            }
+        }
+    }
+
+    return dp[m][n]
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+
+    return b
+}
+```
+
+
+
+### 5.17 技巧（5）
+
+#### Hot 100 例题
+
+##### 31. ⭐⭐只出现一次的数字✅😅
 
 ```go
 // 对于数组 [4, 1, 2, 1, 2]
@@ -2000,7 +3281,7 @@ func singleNumber(nums []int) int {
 }
 ```
 
-##### ⭐⭐ 多数元素 ✅😅
+##### 32. ⭐⭐ 多数元素 ✅😅
 
 ```go
 func majorityElement(nums []int) int {
@@ -2022,6 +3303,155 @@ func majorityElement(nums []int) int {
     return candidate  // 题目保证存在多数元素，不需要验证
 }
 ```
+
+##### 33. ⭐⭐⭐⭐⭐ 颜色分类 ✅😅
+
+````go
+```
+本质是三路快排的 partition 过程
+三个指针
+	left  := 0        // 0 区域的右边界
+	right := n - 1    // 2 区域的左边界
+	i := 0            // 当前遍历指针
+​```
+func sortColors(nums []int)  {
+    left, right := 0, len(nums) - 1
+    i := 0
+
+    for i <= right {
+        if nums[i] == 0 {
+            nums[i], nums[left] = nums[left], nums[i]
+            left++
+            i++
+        } else if nums[i] == 1 {
+            i++
+        } else {
+            nums[i], nums[right] = nums[right], nums[i]
+            right--
+        }
+    }
+}
+````
+
+##### 34. ⭐⭐⭐⭐⭐⭐ 下一个排列 ✅😅
+
+```text
+ 0 1 2 3 4   
+[1,3,5,4,2]  n = 5
+
+1. 找 i
+初始 i = n - 2 = 3
+依次比较 nums[3] > nums[4]
+        nums[2] > nums[3]
+        nums[1] < nums[2]
+        i = 1
+
+2. 找 j
+初始 j = n - 1 = 4
+依次比较 nums[4] <= nums[i]
+		nums[3] > nums[1]
+		j = 3
+		
+3. 交换 i 和 j 的值
+nums[i], nums[j] = nums[j], nums[i]
+[1,4,5,3,2]
+
+4. 反转后半部分，也就是 [i + 1, n - 1]  [2, 4]
+[1,4,2,3,5]
+```
+
+```go
+func nextPermutation(nums []int) {
+    // 是一个非常巧妙的贪心
+    n := len(nums)
+
+    // 从右往左，找转折点 i
+    i := n - 2
+    for i >= 0 && nums[i] >= nums[i+1] {
+        i--
+    }
+
+    if i >= 0 {
+        j := n - 1
+        // 本质是在右侧的降序区间内，找最小的 比 nums[i] 大的数
+        for nums[j] <= nums[i] {
+            j--
+        }
+
+        nums[i], nums[j] = nums[j], nums[i]
+    }
+
+    // 反转后半部分
+    reverse(nums, i+1, n-1)
+}
+
+func reverse(nums []int, l, r int) {
+    for l < r {
+        nums[l], nums[r] = nums[r], nums[l]
+        l++
+        r--
+    }
+}
+```
+
+##### 35. ⭐⭐⭐⭐⭐⭐ 寻找重复数 ✅😅
+
+```go
+// 最优解
+// 把数组看成链表，重复数字就是环入口，用 Floyd 判环算法，两次相遇即可找到答案
+func findDuplicate(nums []int) int {
+    // 快慢指针
+    // 将数组索引和值的关系看作一个链表，利用快慢指针寻找环的入口
+    slow, fast := nums[0], nums[nums[0]]
+
+    // 1. 找到相遇点
+    for slow != fast {
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+    }
+
+    // 2. 找到环的入口，也就是重复数
+    slow = 0
+    for slow != fast {
+        slow = nums[slow]
+        fast = nums[fast]
+    }
+
+    return slow
+}
+```
+
+```go
+// 二分查找，但是边界条件非常容易写错！
+func findDuplicate(nums []int) int {
+    left, right := 0, len(nums) - 1
+
+    for left < right {
+        mid := (left + right) / 2
+        count := 0
+
+        for _, num := range nums {
+            if num <= mid {
+                count++
+            }
+        }
+
+        if count > mid {
+            right = mid
+        } else {
+            left = mid + 1
+        }
+    }
+
+    return left
+}
+```
+
+
+
+
+
+
 
 
 
