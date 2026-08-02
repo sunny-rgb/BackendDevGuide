@@ -26,18 +26,18 @@
 
 只准备很短时间，优先攻克这10题
 
-| 排名 | 题目 | 难度 | 出现次数 |
-| :--: | :--- | :--: | :--: |
-| 🥇 1 | 无重复字符的最长子串 | 🟡 Medium | **301 次** |
-| 🥈 2 | LRU 缓存 | 🟡 Medium | **226 次** |
-| 🥉 3 | 数组中第 K 个最大元素 | 🟡 Medium | **138 次** |
-| 4 | 最大子数组和 | 🟡 Medium | 117 次 |
-| 5 | 反转链表 | 🟢 Easy | 112 次 |
-| 6 | 最长递增子序列 | 🟡 Medium | 107 次 |
-| 7 | 有效的括号 | 🟢 Easy | 100 次 |
-| 8 | 岛屿数量 | 🟡 Medium | 94 次 |
-| 9 | K 个一组翻转链表 | 🔴 Hard | 82 次 |
-| 10 | 三数之和 | 🟡 Medium | 79 次 |
+| 排名 | 题目 | 难度 | 出现次数 | 完成情况 |
+| :--: | :--- | :--: | :--: | :--: |
+| 🥇 1 | [无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) | 🟡 Medium | **301 次** | ✅ |
+| 🥈 2 | [LRU 缓存](#13 ⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) | 🟡 Medium | **226 次** | 🟠 |
+| 🥉 3 | [数组中第 K 个最大元素](# ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅) | 🟡 Medium | **138 次** | 🟠 |
+| 4 | [最大子数组和](# ⭐⭐⭐⭐最大子数组和✅😅) | 🟡 Medium | 117 次 | 🟠 |
+| 5 | [反转链表](#4 ⭐⭐⭐反转链表 ✅✅😅) | 🟢 Easy | 112 次 | 🟠 |
+| 6 | [最长递增子序列](# ⭐⭐⭐⭐⭐最长递增子序列 ✅😅) | 🟡 Medium | 107 次 | 🟠 |
+| 7 | [有效的括号](# ⭐ ⭐有效的括号 ✅😅) | 🟢 Easy | 100 次 | 🟠 |
+| 8 | [岛屿数量](#1 ⭐⭐⭐⭐⭐ 岛屿数量✅✅😅) | 🟡 Medium | 94 次 | 🟠 |
+| 9 | [K 个一组翻转链表](#12 ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅) | 🔴 Hard | 82 次 | 🟠 |
+| 10 | [三数之和](#38 ⭐⭐⭐⭐⭐ 三数之和  ✅😅) | 🟡 Medium | 79 次 | 🟠 |
 
 重点观察：第1名考察频次 ≈ 第10名 × 4倍
 建议：如果面试只能死磕1道题，优先刷【无重复字符的最长子串】；一面没写出来，二面很大概率继续考察。
@@ -45,18 +45,19 @@
 ### 2.2 🥈 TOP 11–20｜次优先级（2~3周备考加入）
 
 刷完TOP 10后跟进这10题，TOP 20合计覆盖约70%手撕场景
-| 排名 | 题目 | 难度 | 出现次数 |
-| :--: | :--- | :--: | :--: |
-| 11 | 最长回文子串 | 🟡 Medium | 78 次 |
-| 12 | 合并 K 个升序链表 | 🔴 Hard | 74 次 |
-| 13 | 合并区间 | 🟡 Medium | 73 次 |
-| 14 | 删除链表的倒数第 N 个结点 | 🟡 Medium | 68 次 |
-| 15 | 编辑距离 | 🟡 Medium | 64 次 |
-| 16 | 接雨水 | 🔴 Hard | 64 次 |
-| 17 | 合并两个有序链表 | 🟢 Easy | 63 次 |
-| 18 | 二叉树的层序遍历 | 🟡 Medium | 61 次 |
-| 19 | 二叉树的最近公共祖先 | 🟡 Medium | 58 次 |
-| 20 | 买卖股票的最佳时机 | 🟢 Easy | 52 次 |
+
+| 排名 | 题目 | 难度 | 出现次数 | 完成情况 |
+| :--: | :--- | :--: | :--: | :--: |
+| 11 | 最长回文子串 | 🟡 Medium | 78 次 | 🟠 |
+| 12 | [合并 K 个升序链表](#19 ⭐⭐⭐⭐⭐⭐合并 K 个升序链表 ✅😅) | 🔴 Hard | 74 次 | 🟠 |
+| 13 | [合并区间](# ⭐⭐⭐⭐⭐合并区间✅😅) | 🟡 Medium | 73 次 | 🟠 |
+| 14 | [删除链表的倒数第 N 个结点](#16 ⭐⭐⭐⭐删除链表的倒数第 N 个结点 ✅😅) | 🟡 Medium | 68 次 | 🟠 |
+| 15 | 编辑距离 | 🟡 Medium | 64 次 | 🟠 |
+| 16 | [接雨水](#39 ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅) | 🔴 Hard | 64 次 | 🟠 |
+| 17 | [合并两个有序链表](#2 ⭐⭐⭐ 合并两个有序链表 ✅✅😅) | 🟢 Easy | 63 次 | 🟠 |
+| 18 | [二叉树的层序遍历](#21 ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅) | 🟡 Medium | 61 次 | 🟠 |
+| 19 | [二叉树的最近公共祖先](# ⭐⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅) | 🟡 Medium | 58 次 | 🟠 |
+| 20 | [买卖股票的最佳时机](# ⭐⭐⭐ 买卖股票的最佳时机 ✅😅) | 🟢 Easy | 52 次 | 🟠 |
 
 ### 2.3 📚 TOP 21–50｜按章节系统刷题（30道，按算法模块攻坚）
 
@@ -153,9 +154,132 @@
 1. [LRU缓存](#⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) ✅1️⃣
 2. [螺旋矩阵](# ⭐⭐⭐⭐⭐ 螺旋矩阵  ✅😀) ✅1️⃣
 
-## 5. 题库
+## 5. ACM常用处理函数
 
-### 5.1 哈希（3）
+### 5.1 bufio
+
+```go
+import (
+	"os"
+    "bufio"
+)
+
+// 创建一个缓冲读取器，从标准输入中读取数据
+reader := bufio.NewReader(os.Stdin)
+
+line1, _ := reader.ReadString('\n')
+
+line2, _ := reader.ReadString('\n')
+
+line3, _ := reader.ReadString('\n')
+
+// line1 := "5 9\n"
+// line2 := "1 2 3 4 5\n"
+// line3 := abcabcbb
+```
+
+```go
+scanner := bufio.NewScanner(os.Stdin)
+
+scanner.Scan()
+
+line := scanner.Text()
+```
+
+### 5.2 os
+
+```go
+
+```
+
+### 5.3 strings
+
+```go
+// strings.Fields 转为切片
+desc := strings.Fields(line1)
+
+numsStr := strings.Fields(line2)
+
+// desc = []string{"5", "9"}
+// numsStr = []string{"1", "2", "3", "4", "5"}
+```
+
+```go
+// strings.Join 将字符串切片，拼接为字符串
+// 只能为string，如果是int，要先strconv.Itoa()
+res := []string{"5", "4", "3", "2", "1"}
+s := strings.Join(res, " ")
+fmt.Println(s)
+```
+
+```go
+line, _ := reader.ReadString('\n')
+line = strings.TrimSpace(line) // 去除换行符
+matrix[i] = make([]byte, n)
+for j := 0; j < n; j++ {
+	matrix[i][j] = line[j]
+}
+```
+
+### 5.4 strconv
+
+```go
+// strconv.Atoi  → ASCII to int
+// strconv.Itoa  → int to ASCII
+
+num, _ := strconv.Atoi(s)
+
+s := strconv.Itoa(123)
+```
+
+### 5.5 fmt
+
+```go
+var n int
+fmt.Scan(&n)
+```
+
+```go
+fmt.Println(res[0], res[1])
+
+fmt.Println(strings.Join(res, " "))
+```
+
+```go
+var numsLen, target int
+
+fmt.Fscan(os.Stdin, &numsLen, &target)
+
+nums := make([]int, numsLen)
+for i := 0; i < numsLen; i++ {
+    fmt.Fscan(os.Stdin, &nums[i])
+}
+```
+
+### 5.6 sort
+
+```go
+// 把 nums 这个整型切片按从小到大排序（升序）
+sort.Ints(nums)
+```
+
+### 5.7 rand
+
+```go
+import (
+	"math/rand"
+)
+
+rand.Seed(time.Now().UnixNano())
+
+pivotIndex := left + rand.Intn(right - left + 1)
+```
+
+
+
+## 6. 题库
+
+### 6.1 哈希（3）
 
 #### 哈希表理论基础
 
@@ -260,7 +384,7 @@ func longestConsecutive(nums []int) int {
 
 
 
-### 5.2 双指针（4）
+### 6.2 双指针（4）
 
 #### Hot 100 例题
 
@@ -464,36 +588,40 @@ func trap(height []int) int {
 
 
 
-### 5.3 滑动窗口（2）
+### 6.3 滑动窗口（2）
 
 #### Hot 100 例题
 
 ##### ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅
 
 ```go
+// 时间复杂度 O(n)
+// 空间复杂度 O(k)
+
 func lengthOfLongestSubstring(s string) int {
     // 记录字符最后出现的位置
     lastseen := make(map[byte]int)
-    start := 0
+    
+    left := 0
     maxlen := 0
 
-    for i := 0; i < len(s); i++ {
-        ch := s[i]
+    for right := 0; right < len(s); right++ {
+        ch := s[right]
         
-        // 如果当前位置的这个字符存在lastseen中，并且它的位置是在起点的后面，说明它出现过
+        // 如果当前位置的这个字符存在 lastseen 中，并且它的位置是在起点的后面，说明它出现过
         // 此时，移动窗口起点到重复字符的下一个位置
-        if pos, exists := lastseen[ch]; exists && pos >= start {
-            start = pos + 1
+        if pos, exists := lastseen[ch]; exists && pos >= left {
+            left = pos + 1
         }
+        
+        // 更新 map，因为当前字符必须先加入窗口，再计算窗口长度
+        lastseen[ch] = right
 		
-        // 更新当前窗口长度，其实不管怎么走，i都一定是窗口的 "end"
-        currentlen := i - start + 1
+        // 更新当前窗口长度，其实不管怎么走，right 都一定是窗口的 "end"
+        currentlen := right - left + 1
         if currentlen > maxlen {
             maxlen = currentlen
         }
-
-        // 更新 map
-        lastseen[ch] = i
     }
     return maxlen
 }
@@ -501,7 +629,7 @@ func lengthOfLongestSubstring(s string) int {
 
 ##### 找到字符串中所有字母异位词 ❌😅
 
-### 5.4 子串（3）
+### 6.4 子串（3）
 
 ##### ⭐⭐⭐⭐⭐⭐⭐滑动窗口最大值✅😅
 
@@ -630,7 +758,7 @@ func minWindow(s string, t string) string {
 
 
 
-### 5.5 普通数组（5）
+### 6.5 普通数组（5）
 
 #### Hot 100 例题
 
@@ -710,7 +838,7 @@ func merge(intervals [][]int) [][]int {
 
 
 
-### 5.6 矩阵（4）
+### 6.6 矩阵（4）
 
 #### Hot 100 例题
 
@@ -892,7 +1020,7 @@ func searchMatrix(matrix [][]int, target int) bool {
 
 
 
-### 5.7 链表（14）
+### 6.7 链表（14）
 
 #### 链表理论基础
 
@@ -1674,7 +1802,7 @@ func (this *LRUCache) remove(node *Node) {
 
 
 
-### 5.8 二叉树（15）
+### 6.8 二叉树（15）
 
 #### Hot 100 例题
 
@@ -2421,7 +2549,7 @@ func maxPathSum(root *TreeNode) int {
 
 
 
-### 5.9 图论（4）
+### 6.9 图论（4）
 
 #### Hot 100 例题
 
@@ -2476,7 +2604,7 @@ func numIslands(grid [][]byte) int {
 
 - DFS + 辅助矩阵标记
 
-### 5.10 回溯（8）
+### 6.10 回溯（8）
 
 #### Hot 100 例题
 
@@ -2658,7 +2786,7 @@ func combinationSum(candidates []int, target int) [][]int {
 
 
 
-### 5.11 二分查找（6）
+### 6.11 二分查找（6）
 
 #### Hot 100 例题
 
@@ -2790,7 +2918,7 @@ func search(nums []int, target int) int {
 }
 ```
 
-### 5.12 栈（5）
+### 6.12 栈（5）
 
 #### Hot 100 例题
 
@@ -2830,7 +2958,7 @@ func isValid(s string) bool {
 }
 ```
 
-### 5.13 堆（3）
+### 6.13 堆（3）
 
 ##### ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅
 
@@ -2883,7 +3011,7 @@ func partition(nums []int, left, right int) int {
 }
 ```
 
-### 5.14 贪心算法（4）
+### 6.14 贪心算法（4）
 
 #### Hot 100 例题
 
@@ -2916,7 +3044,7 @@ func maxProfit(prices []int) int {
 }
 ```
 
-### 5.15 动态规划（10）
+### 6.15 动态规划（10）
 
 #### Hot 100 例题
 
@@ -3174,7 +3302,7 @@ func lengthOfLIS(nums []int) int {
 
 
 
-### 5.16 多维动态规划（5）
+### 6.16 多维动态规划（5）
 
 #### Hot 100 例题
 
@@ -3261,7 +3389,7 @@ func max(a, b int) int {
 
 
 
-### 5.17 技巧（5）
+### 6.17 技巧（5）
 
 #### Hot 100 例题
 
