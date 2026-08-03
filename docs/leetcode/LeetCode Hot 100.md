@@ -156,6 +156,20 @@
 
 ## 5. ACM常用处理函数
 
+函数脚本头
+
+```go
+package main
+
+import (
+	"fmt"
+    "os"
+    "bufio"
+    "strings"
+    "strconv"
+)
+```
+
 ### 5.1 bufio
 
 ```go
@@ -175,7 +189,11 @@ line3, _ := reader.ReadString('\n')
 
 // line1 := "5 9\n"
 // line2 := "1 2 3 4 5\n"
-// line3 := abcabcbb
+// line3 := abcabcbb\n
+
+// 去掉换行
+s = strings.TrimSpace(s)
+
 ```
 
 ```go
@@ -186,13 +204,7 @@ scanner.Scan()
 line := scanner.Text()
 ```
 
-### 5.2 os
-
-```go
-
-```
-
-### 5.3 strings
+### 5.2 strings
 
 ```go
 // strings.Fields 转为切片
@@ -221,7 +233,7 @@ for j := 0; j < n; j++ {
 }
 ```
 
-### 5.4 strconv
+### 5.3 strconv
 
 ```go
 // strconv.Atoi  → ASCII to int
@@ -232,7 +244,7 @@ num, _ := strconv.Atoi(s)
 s := strconv.Itoa(123)
 ```
 
-### 5.5 fmt
+### 5.4 fmt
 
 ```go
 var n int
@@ -256,14 +268,14 @@ for i := 0; i < numsLen; i++ {
 }
 ```
 
-### 5.6 sort
+### 5.5 sort
 
 ```go
 // 把 nums 这个整型切片按从小到大排序（升序）
 sort.Ints(nums)
 ```
 
-### 5.7 rand
+### 5.6 rand
 
 ```go
 import (
@@ -273,6 +285,25 @@ import (
 rand.Seed(time.Now().UnixNano())
 
 pivotIndex := left + rand.Intn(right - left + 1)
+```
+
+### 5.7 math
+
+```go
+import (
+	"math"
+)
+
+// 计算平方根，判断是否是完全平方数
+func check(x int64) bool {
+    // math.Sqrt
+    root := int64(math.Sqrt(float64(x)))
+    
+    // math.Pow
+    root := int64(math.Pow(float64(x), 0.5))
+
+    return root*root == x
+}
 ```
 
 
