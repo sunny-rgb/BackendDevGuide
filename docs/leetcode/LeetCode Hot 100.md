@@ -30,14 +30,14 @@
 | :--: | :--- | :--: | :--: | :--: |
 | 🥇 1 | [无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) | 🟡 Medium | **301 次** | ✅ |
 | 🥈 2 | [LRU 缓存](#13 ⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) | 🟡 Medium | **226 次** | 🟠 |
-| 🥉 3 | [数组中第 K 个最大元素](# ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅) | 🟡 Medium | **138 次** | 🟠 |
-| 4 | [最大子数组和](# ⭐⭐⭐⭐最大子数组和✅😅) | 🟡 Medium | 117 次 | 🟠 |
-| 5 | [反转链表](#4 ⭐⭐⭐反转链表 ✅✅😅) | 🟢 Easy | 112 次 | 🟠 |
-| 6 | [最长递增子序列](# ⭐⭐⭐⭐⭐最长递增子序列 ✅😅) | 🟡 Medium | 107 次 | 🟠 |
-| 7 | [有效的括号](# ⭐ ⭐有效的括号 ✅😅) | 🟢 Easy | 100 次 | 🟠 |
-| 8 | [岛屿数量](#1 ⭐⭐⭐⭐⭐ 岛屿数量✅✅😅) | 🟡 Medium | 94 次 | 🟠 |
+| 🥉 3 | [数组中第 K 个最大元素](# ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅) | 🟡 Medium | **138 次** | ✅ |
+| 4 | [最大子数组和](# ⭐⭐⭐⭐最大子数组和✅😅) | 🟡 Medium | 117 次 | ✅ |
+| 5 | [反转链表](#4 ⭐⭐⭐反转链表 ✅✅😅) | 🟢 Easy | 112 次 | ✅ |
+| 6 | [最长递增子序列](# ⭐⭐⭐⭐⭐最长递增子序列 ✅😅) | 🟡 Medium | 107 次 | ✅ |
+| 7 | [有效的括号](# ⭐ ⭐有效的括号 ✅😅) | 🟢 Easy | 100 次 | ✅ |
+| 8 | [岛屿数量](#1 ⭐⭐⭐⭐⭐ 岛屿数量✅✅😅) | 🟡 Medium | 94 次 | ✅ |
 | 9 | [K 个一组翻转链表](#12 ⭐⭐⭐⭐⭐⭐⭐k个一组翻转链表 ✅😅) | 🔴 Hard | 82 次 | 🟠 |
-| 10 | [三数之和](#38 ⭐⭐⭐⭐⭐ 三数之和  ✅😅) | 🟡 Medium | 79 次 | 🟠 |
+| 10 | [三数之和](#38 ⭐⭐⭐⭐⭐ 三数之和  ✅😅) | 🟡 Medium | 79 次 | ✅ |
 
 重点观察：第1名考察频次 ≈ 第10名 × 4倍
 建议：如果面试只能死磕1道题，优先刷【无重复字符的最长子串】；一面没写出来，二面很大概率继续考察。
@@ -72,7 +72,7 @@
 | ⭐⭐ | 🔁 回溯 | 2 道 | 全排列、括号生成 |
 | ⭐⭐ | 🪟 滑动窗口 | 2 道 | 滑动窗口最大值、最小覆盖子串 |
 | ⭐⭐ | 🟦 矩阵 | 2 道 | 螺旋矩阵、搜索二维矩阵 II |
-| ⭐ | 📦 数组 / 哈希 / 堆 | 3 道 | 两数之和、寻找重复数、前 K 个高频元素 |
+| ⭐ | 📦 数组 / 哈希 / 堆 | 3 道 | 两数之和✅、寻找重复数、前 K 个高频元素 |
 | ⭐ | 📚 栈 | 2 道 | 字符串解码、最小栈 |
 | ⭐ | 🕸️ 图 | 1 道 | 课程表 |
 
@@ -242,6 +242,24 @@ for j := 0; j < n; j++ {
 num, _ := strconv.Atoi(s)
 
 s := strconv.Itoa(123)
+
+// 处理输入的完整流程 1
+// 用例: 10 9 2 5 3 7 101 18
+reader := bufio.NewReader(os.Stdin)
+line, _ := reader.ReadString('\n')
+numsStr := strings.Fields(line) // 按照空格分割字符串
+
+var nums []int
+
+for i := 0; i < len(numsStr); i++ {
+    val, _ := strconv.Atoi(numsStr[i])
+    nums = append(nums, val)
+}
+
+// 用例: ()[]{}
+reader := bufio.NewReader(os.Stdin)
+line, _ := reader.ReadString('\n')
+str := []rune(strings.TrimSpace(line)
 ```
 
 ### 5.4 fmt
@@ -258,6 +276,7 @@ fmt.Println(strings.Join(res, " "))
 ```
 
 ```go
+// 处理输入的完整流程 2
 var numsLen, target int
 
 fmt.Fscan(os.Stdin, &numsLen, &target)
@@ -313,15 +332,150 @@ func check(x int64) bool {
 
 ### 5.8 常用数据结构的构造方式
 
+#### 5.8.1 单链表
+
 ```go
-// 单链表
+package main
 
-// 二叉树
+import (
+    "fmt"
+    "os"
+)
 
-// 二维矩阵
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
 
+func invertList(head *ListNode) *ListNode {
+    var pre *ListNode
+    cur := head
 
+    for cur != nil {
+        next := cur.Next
+        cur.Next = pre
+        pre = cur
+        cur = next
+    }
+
+    return pre
+}
+
+func main() {
+    var n int
+    fmt.Fscan(os.Stdin, &n)
+
+    var head *ListNode
+    var tail *ListNode
+
+    for i := 0; i < n; i++ {
+        var val int
+        fmt.Fscan(os.Stdin, &val)
+
+        node := &ListNode{
+            Val: val,
+        }
+
+        if head == nil {
+            head = node
+            tail = node
+        } else {
+            tail.Next = node
+            tail = node
+        }
+    }
+
+    head = invertList(head)
+
+    for head != nil {
+        fmt.Print(head.Val)
+        if head.Next != nil {
+            fmt.Print(" ")
+        }
+        head = head.Next
+    }
+    fmt.Println()
+}
 ```
+
+#### 5.8.2 二叉树
+
+```go
+```
+
+
+
+#### 5.8.3 二维数据 / 矩阵
+
+```go
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func calculateArea(matrix [][]byte, n, m int) int {
+    if len(matrix) == 0 {
+        return 0
+    }
+
+    count := 0
+
+    var dfs func(int, int)
+    dfs = func(i, j int) {
+        if i < 0 || i >= n || j < 0 || j >= m || matrix[i][j] != '1' {
+            return
+        }
+
+        matrix[i][j] = '0'
+
+        dfs(i-1, j)
+        dfs(i+1, j)
+        dfs(i, j-1)
+        dfs(i, j+1)
+    }
+
+    for i := 0; i < n; i++ {
+        for j := 0; j < m; j++ {
+            if matrix[i][j] == '1' {
+                count++
+                dfs(i, j)
+            }
+        }
+    }
+
+    return count
+}
+
+func main() {
+    var n, m int
+    fmt.Fscan(os.Stdin, &n, &m)
+
+    matrix := make([][]byte, n)
+
+    // 1. 中间有空格就这样子写
+    // for i := 0; i < n; i++ {
+    //     matrix[i] = make([]byte, m)
+    //     for j := 0; j < m; j++ {
+    //         fmt.Fscan(os.Stdin, &matrix[i][j])
+    //     }
+    // }
+
+    // 2. 中间没有空格，就这样子写
+    for i := 0; i < n; i++ {
+        var s string
+        fmt.Fscan(os.Stdin, &s)
+        matrix[i] = []byte(s)
+    }
+
+    res := calculateArea(matrix, n, m)
+
+    fmt.Println(res)
+}
+```
+
+
 
 
 
@@ -538,8 +692,11 @@ func maxArea(height []int) int {
 
 这样结果中就会出现两个 [-1, 0, 1]，这不符合题目要求。
 ​```
+package main
+
 import (
     "fmt"
+    "os"
     "sort"
 )
 
@@ -593,6 +750,29 @@ func threeSum(nums []int) [][]int {
     }
 
     return results
+}
+
+func main() {
+    var n int
+    fmt.Fscan(os.Stdin, &n)
+
+    nums := make([]int, n)
+
+    for i := 0; i < n; i++ {
+        fmt.Fscan(os.Stdin, &nums[i])
+    }
+
+    res := threeSum(nums)
+
+    for i := 0; i < len(res); i++ {
+        for j := 0; j < len(res[i]); j++ {
+            fmt.Print(res[i][j])
+            if j != len(res[i]) - 1 {
+                fmt.Print(" ")
+            }
+        }
+        fmt.Println()
+    }
 }
 ````
 
