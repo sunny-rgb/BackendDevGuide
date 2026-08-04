@@ -273,6 +273,11 @@ for i := 0; i < numsLen; i++ {
 ```go
 // 把 nums 这个整型切片按从小到大排序（升序）
 sort.Ints(nums)
+
+// sort.Slice 可以对任何 slice 排序，你只需要告诉它："什么叫前面，什么叫后面"
+sort.Slice(arrs, func(i, j int) bool{
+    return customMoreLittle(arrs[i], arrs[j])
+})
 ```
 
 ### 5.6 rand
@@ -304,6 +309,18 @@ func check(x int64) bool {
 
     return root*root == x
 }
+```
+
+### 5.8 常用数据结构的构造方式
+
+```go
+// 单链表
+
+// 二叉树
+
+// 二维矩阵
+
+
 ```
 
 
