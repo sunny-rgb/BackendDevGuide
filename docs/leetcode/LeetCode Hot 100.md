@@ -29,7 +29,7 @@
 | 排名 | 题目 | 难度 | 出现次数 | 完成情况 |
 | :--: | :--- | :--: | :--: | :--: |
 | 🥇 1 | [无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) | 🟡 Medium | **301 次** | ✅ |
-| 🥈 2 | [LRU 缓存](#13 ⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) | 🟡 Medium | **226 次** | 🟠 |
+| 🥈 2 | [LRU 缓存](#13 ⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) | 🟡 Medium | **226 次** | ✅ |
 | 🥉 3 | [数组中第 K 个最大元素](# ⭐⭐⭐⭐⭐ 数组中的第 K 个最大元素 ✅😅) | 🟡 Medium | **138 次** | ✅ |
 | 4 | [最大子数组和](# ⭐⭐⭐⭐最大子数组和✅😅) | 🟡 Medium | 117 次 | ✅ |
 | 5 | [反转链表](#4 ⭐⭐⭐反转链表 ✅✅😅) | 🟢 Easy | 112 次 | ✅ |
@@ -48,16 +48,16 @@
 
 | 排名 | 题目 | 难度 | 出现次数 | 完成情况 |
 | :--: | :--- | :--: | :--: | :--: |
-| 11 | [最长回文子串](# ⭐⭐⭐⭐⭐ 最长回文子串 ✅😅) | 🟡 Medium | 78 次 | 🟠 |
+| 11 | [最长回文子串](# ⭐⭐⭐⭐⭐ 最长回文子串 ✅😅) | 🟡 Medium | 78 次 | ✅ |
 | 12 | [合并 K 个升序链表](#19 ⭐⭐⭐⭐⭐⭐合并 K 个升序链表 ✅😅) | 🔴 Hard | 74 次 | 🟠 |
 | 13 | [合并区间](# ⭐⭐⭐⭐⭐合并区间✅😅) | 🟡 Medium | 73 次 | ✅ |
 | 14 | [删除链表的倒数第 N 个结点](#16 ⭐⭐⭐⭐删除链表的倒数第 N 个结点 ✅😅) | 🟡 Medium | 68 次 | ✅ |
 | 15 | [编辑距离](# ⭐⭐⭐⭐⭐ 编辑距离 ✅😅) | 🟡 Medium | 64 次 | 🟠 |
-| 16 | [接雨水](#39 ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅) | 🔴 Hard | 64 次 | ✅ |
-| 17 | [合并两个有序链表](#2 ⭐⭐⭐ 合并两个有序链表 ✅✅😅) | 🟢 Easy | 63 次 | ✅ |
+| 16 | [接雨水](#39 ⭐⭐⭐⭐⭐⭐ 接雨水  ✅😅) | 🔴 Hard | 64 次 | ✅✅ |
+| 17 | [合并两个有序链表](#2 ⭐⭐⭐ 合并两个有序链表 ✅✅😅) | 🟢 Easy | 63 次 | ✅✅ |
 | 18 | [二叉树的层序遍历](#21 ⭐⭐⭐⭐⭐二叉树的层序遍历 ✅😅) | 🟡 Medium | 61 次 | 🟠 |
 | 19 | [二叉树的最近公共祖先](# ⭐⭐⭐⭐⭐ 二叉树的最近公共祖先 ✅😅) | 🟡 Medium | 58 次 | 🟠 |
-| 20 | [买卖股票的最佳时机](# ⭐⭐⭐ 买卖股票的最佳时机 ✅😅) | 🟢 Easy | 52 次 | ✅ |
+| 20 | [买卖股票的最佳时机](# ⭐⭐⭐ 买卖股票的最佳时机 ✅😅) | 🟢 Easy | 52 次 | ✅✅ |
 
 ### 2.3 📚 TOP 21–50｜按章节系统刷题（30道，按算法模块攻坚）
 
@@ -81,7 +81,7 @@
 时间极度紧张时，可以暂时后置
 | 序号 | 第一组 | 第二组 |
 | :--: | :--- | :--- |
-| 1 | 移动零 | 字母异位词分组 |
+| 1 | 移动零✅ | 字母异位词分组 |
 | 2 | 只出现一次的数字 | 杨辉三角 |
 | 3 | 完全平方数 | 跳跃游戏 II |
 | 4 | 划分字母区间 | 柱状图中最大的矩形 |
@@ -149,10 +149,9 @@
 
 1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣
 
-## 4. 面经来源
+## 4. 面试手撕
 
-1. [LRU缓存](#⭐⭐⭐⭐⭐⭐⭐LRU缓存 ✅😅) ✅1️⃣
-2. [螺旋矩阵](# ⭐⭐⭐⭐⭐ 螺旋矩阵  ✅😀) ✅1️⃣
+1. 【提前批】理想+ 一面：[无重复字符的最长子串](# ⭐⭐⭐⭐⭐ 无重复字符的最长子串  ✅😅) 【Top 1】
 
 ## 5. ACM常用处理函数
 
@@ -401,9 +400,107 @@ func main() {
 #### 5.8.2 二叉树
 
 ```go
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+// 根据层序数组构造二叉树
+func buildTree(nums []string) *TreeNode {
+	if len(nums) == 0 || nums[0] == "null" {
+		return nil
+	}
+
+	val, _ := strconv.Atoi(nums[0])
+	root := &TreeNode{Val: val}
+
+	queue := []*TreeNode{root}
+	index := 1
+
+	for index < len(nums) {
+		node := queue[0]
+		queue = queue[1:]
+
+		// 左节点
+		if nums[index] != "null" {
+			val, _ := strconv.Atoi(nums[index])
+			node.Left = &TreeNode{Val: val}
+			queue = append(queue, node.Left)
+		}
+		index++
+
+		if index >= len(nums) {
+			break
+		}
+
+		// 右节点
+		if nums[index] != "null" {
+			val, _ := strconv.Atoi(nums[index])
+			node.Right = &TreeNode{Val: val}
+			queue = append(queue, node.Right)
+		}
+		index++
+	}
+
+	return root
+}
+
+// 二叉树层序遍历
+func levelOrder(root *TreeNode) {
+	if root == nil {
+		return
+	}
+
+	queue := []*TreeNode{root}
+
+	for len(queue) > 0 {
+		size := len(queue)
+
+		for i := 0; i < size; i++ {
+			node := queue[0]
+			queue = queue[1:]
+
+			fmt.Print(node.Val)
+			if i != size-1 {
+				fmt.Print(" ")
+			}
+
+			if node.Left != nil {
+				queue = append(queue, node.Left)
+			}
+
+			if node.Right != nil {
+				queue = append(queue, node.Right)
+			}
+		}
+
+		fmt.Println()
+	}
+}
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+
+	input := scanner.Text()
+	nums := strings.Split(input, " ")
+
+	root := buildTree(nums)
+
+	levelOrder(root)
+}
 ```
-
-
 
 #### 5.8.3 二维数据 / 矩阵
 
@@ -3579,7 +3676,45 @@ func min(a, b int) int {
 ##### ⭐⭐⭐⭐⭐ 最长回文子串 ✅😅
 
 ```go
+/*
+回文串具有"中心对称"的特性：从中心向两端扩展，左右字符始终相等。
+1. 遍历字符串的每个位置 i
+2. 对每个位置尝试两种中心：
+   - 奇数长度：以 i 为中心（如 "aba"）
+   - 偶数长度：以 i 和 i+1 为中心（如 "abba"）
+3. 从中心向两边扩展，直到不匹配为止
+4. 记录最长的回文子串
+*/
 
+func longestPalindrome(s string) string {
+    if len(s) < 2 {
+        return s
+    }
+
+    start, maxLen := 0, 1
+
+    // 中心扩展函数
+    expandAroundCenter := func(left, right int) {
+        for left >= 0 && right < len(s) && s[left] == s[right] {
+            curLen := right - left + 1
+            if curLen > maxLen {
+                maxLen = curLen
+                start = left
+            }
+            left--
+            right++
+        }
+    }
+
+    for i := 0; i < len(s); i++ {
+        // 奇数长度回文（中心为单个字符）
+        expandAroundCenter(i, i)
+        // 偶数长度回文（中心为两个字符之间）
+        expandAroundCenter(i, i+1)
+    }
+
+    return s[start : start+maxLen]
+}
 ```
 
 ##### ⭐⭐⭐⭐⭐ 最长公共子序列 ✅😅
@@ -3624,11 +3759,46 @@ func max(a, b int) int {
 ##### ⭐⭐⭐⭐⭐ 编辑距离 ✅😅
 
 ```go
+func minDistance(word1 string, word2 string) int {
+    m, n := len(word1), len(word2)
+    
+    // 创建 DP 表
+    dp := make([][]int, m+1)
+    for i := range dp {
+        dp[i] = make([]int, n+1)
+    }
+    
+    // 初始化边界条件
+    // 空字符串转换成 word2 的前 j 个字符：需要插入 j 次
+    for j := 0; j <= n; j++ {
+        dp[0][j] = j
+    }
+    // word1 的前 i 个字符转换成空字符串：需要删除 i 次
+    for i := 0; i <= m; i++ {
+        dp[i][0] = i
+    }
+    
+    // 填充 DP 表
+    for i := 1; i <= m; i++ {
+        for j := 1; j <= n; j++ {
+            // 计算替换操作的代价
+            cost := 0
+            if word1[i-1] != word2[j-1] {
+                cost = 1
+            }
+            
+            // 三种操作取最小值
+            dp[i][j] = min(
+                dp[i-1][j] + 1,          // 删除
+                dp[i][j-1] + 1,          // 插入
+                dp[i-1][j-1] + cost,     // 替换或匹配
+            )
+        }
+    }
+    
+    return dp[m][n]
+}
 ```
-
-
-
-
 
 ### 6.17 技巧（5）
 
