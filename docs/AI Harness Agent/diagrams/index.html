@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>AI Harness Architectures · 5 Side-by-Side</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  (function(){var t=localStorage.getItem('theme');var p=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme', t||(p?'dark':'light'));})();
+</script>
+<style>
+  :root {
+    --paper: #f5f5f5;
+    --paper-2: #ffffff;
+    --ink: #2d3142;
+    --muted: #4f5d75;
+    --soft: #7a8399;
+    --rule: rgba(45,49,66,0.12);
+    --hover-bg: rgba(45,49,66,0.04);
+    --accent: #eb6c36;
+    --accent-tint: #fdf3ed;
+  }
+  [data-theme="dark"] {
+    --paper: #14171c;
+    --paper-2: #1c2027;
+    --ink: #e6e8ed;
+    --muted: #97a0b3;
+    --soft: #6e7888;
+    --rule: rgba(255,255,255,0.09);
+    --hover-bg: rgba(255,255,255,0.06);
+    --accent: #ff8456;
+    --accent-tint: #2a1d12;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); font-family: 'Geist', sans-serif; color: var(--ink); }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  .eyebrow { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); margin: 0 0 0.75rem; }
+  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 2.4rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; line-height: 1.1; }
+  .lede { font-family: 'Geist', sans-serif; color: var(--muted); font-size: 16px; margin: 0 0 2.5rem; max-width: 760px; line-height: 1.55; }
+  .lede em { font-family: 'Instrument Serif', serif; font-style: italic; color: var(--ink); }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--paper-2); border: 1px solid var(--rule); border-radius: 6px; padding: 1.5rem; transition: border-color 120ms ease; display: flex; flex-direction: column; }
+  .card:hover { border-color: var(--accent); }
+  .card-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; }
+  .num { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  .card-title { font-family: 'Geist', sans-serif; font-size: 1.25rem; font-weight: 600; margin: 0; }
+  .card-sub { font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--muted); margin: 0.25rem 0 1rem; letter-spacing: 0.04em; }
+  .card-desc { font-size: 14px; line-height: 1.55; color: var(--ink); margin: 0 0 1.25rem; flex-grow: 1; }
+  .card-meta { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 0.75rem; border-top: 1px solid var(--rule); margin-bottom: 1rem; font-family: 'Geist Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.08em; }
+  .meta-item span { color: var(--ink); }
+  .card-cta { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.10em; color: var(--accent); text-decoration: none; padding: 0.5rem 0; }
+  .card-cta::after { content: '→'; transition: transform 120ms ease; }
+  .card:hover .card-cta::after { transform: translateX(3px); }
+  .pair { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+  .pair-label { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: var(--muted); }
+  .pair-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tag { font-family: 'Geist Mono', monospace; font-size: 10px; padding: 0.25rem 0.5rem; border: 1px solid var(--rule); border-radius: 2px; color: var(--muted); letter-spacing: 0.04em; }
+  .footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--soft); letter-spacing: 0.08em; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .topnav { position: sticky; top: 0; z-index: 100; background: var(--paper-2); border-bottom: 1px solid var(--rule); }
+  .topnav-inner { max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--ink); font-family: 'Geist', sans-serif; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+  .brand-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+  .topnav-links { display: flex; list-style: none; padding: 0; margin: 0; gap: 0.25rem; flex-wrap: wrap; flex-grow: 1; }
+  .topnav-links a { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: var(--muted); text-decoration: none; padding: 0.35rem 0.65rem; border-radius: 2px; transition: color 120ms, background 120ms; white-space: nowrap; }
+  .topnav-links a:hover { color: var(--ink); background: var(--hover-bg); }
+  .topnav-links a.active { color: var(--accent); background: var(--accent-tint); }
+  .topnav-aside { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--soft); flex-shrink: 0; }
+  .theme-toggle { font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.12em; background: transparent; border: 1px solid var(--rule); color: var(--muted); padding: 0.4rem 0.65rem; border-radius: 2px; cursor: pointer; flex-shrink: 0; transition: color 120ms, border-color 120ms; }
+  .theme-toggle:hover { color: var(--ink); border-color: var(--muted); }
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="Harness navigation">
+  <div class="topnav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span>
+      <span>Harness Diagrams</span>
+    </a>
+    <ul class="topnav-links">
+      <li><a href="index.html">index</a></li>
+      <li><a href="01-openclaw.html">01 openclaw</a></li>
+      <li><a href="03-hermes-agent.html">02 hermes-agent</a></li>
+      <li><a href="05-claude-code.html">03 claude-code</a></li>
+      <li><a href="04-codex.html">04 codex</a></li>
+      <li><a href="06-pi.html">05 pi</a></li>
+      <li><a href="02-deepseek-harness.html">06 deepseek-harness</a></li>
+    </ul>
+    <span class="topnav-aside">← / → to switch</span>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">dark</button>
+  </div>
+</nav>
+<div class="wrap">
+  <p class="eyebrow">AI Harness Agent · Architecture Index</p>
+  <h1>六个 Harness，六种架构</h1>
+  <p class="lede">把 <em>openclaw</em>、<em>hermes-agent</em>、<em>claude-code</em>、<em>codex</em>、<em>pi</em>、<em>deepseek-harness</em> 这六个仓库的架构各画一张图。每张图都围绕那一家最锋利的差异点展开——单看一张图就能和别家区分开。</p>
+
+  <div class="grid">
+
+    <a href="01-openclaw.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">01 / 06</span>
+      </div>
+      <h3 class="card-title">openclaw</h3>
+      <p class="card-sub">Personal AI Gateway</p>
+      <p class="card-desc">一个常驻 Gateway 进程居中，30+ 消息通道、桌面/移动 app、Web 控制 UI、内嵌编码 agent 全挂在它身上。沙箱默认关闭，可插拔（Docker / Podman / SSH / OpenShell）。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>TS · pnpm monorepo</span></span>
+        <span class="meta-item">沙箱 · <span>opt-in · Docker/SSH</span></span>
+        <span class="meta-item">协议 · <span>MIT</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">Gateway (long-lived)</span>
+          <span class="tag">156 plugins</span>
+          <span class="tag">ACP bridge</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+    <a href="03-hermes-agent.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">02 / 06</span>
+      </div>
+      <h3 class="card-title">hermes-agent</h3>
+      <p class="card-sub">Self-Improving Personal Agent</p>
+      <p class="card-desc">一个 Python 写的多入口个人 agent。同一套对话循环跑在 CLI / TUI / Electron / Web / 20+ 消息通道 / ACP IDE 服务端上。独特的"自我进化"循环——agent 写自己的技能，curator 用辅助模型维护它们。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>Python 3.11 · TS UIs · native FTS5</span></span>
+        <span class="meta-item">沙箱 · <span>7 backends</span></span>
+        <span class="meta-item">协议 · <span>MIT</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">Conversation Loop</span>
+          <span class="tag">Curator (aux model)</span>
+          <span class="tag">MEMORY/USER</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+    <a href="05-claude-code.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">03 / 06</span>
+      </div>
+      <h3 class="card-title">claude-code</h3>
+      <p class="card-sub">Anthropic's Coding Agent</p>
+      <p class="card-desc">闭源的 CLI 二进制居中。本仓库只是扩展面：plugin marketplace、hooks、skills、sub-agents、slash commands 全用 JSON / Markdown 描述。最强的是企业部署故事——MDM（Jamf / Intune / ADMX / Group Policy）做强制策略。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>closed binary · open extension</span></span>
+        <span class="meta-item">沙箱 · <span>app-level · opt-in</span></span>
+        <span class="meta-item">协议 · <span>Proprietary</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">CLI Binary</span>
+          <span class="tag">Marketplace + Hooks</span>
+          <span class="tag">Enterprise MDM</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+    <a href="04-codex.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">04 / 06</span>
+      </div>
+      <h3 class="card-title">codex</h3>
+      <p class="card-sub">OpenAI's Coding Agent</p>
+      <p class="card-desc">Rust 2024 workspace（130+ crate），codex-core 居中。三个 OS 各一套原生沙箱（Linux seccomp+bwrap / macOS sandbox-exec / Windows Job+ACL+WFP）。execpolicy 是 OS 沙箱之上的独立声明式策略层。`WireApi::Responses` 是唯一合法 wire。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>Rust 2024 · 130 crates</span></span>
+        <span class="meta-item">沙箱 · <span>always-on · per-OS native</span></span>
+        <span class="meta-item">协议 · <span>Apache-2.0</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">codex-core</span>
+          <span class="tag">execpolicy DSL</span>
+          <span class="tag">Multi-agent namespaces</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+    <a href="06-pi.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">05 / 06</span>
+      </div>
+      <h3 class="card-title">pi</h3>
+      <p class="card-sub">Self-Extensible Coding Agent</p>
+      <p class="card-desc">npm monorepo 里 10 个 TS 包，<code>pi-agent-core</code> 居中。最锋利的是 self-extension——agent 写自己的扩展；以及"故意不带权限系统"——沙箱明确推给宿主层（Gondolin micro-VM / Docker / OpenShell 三选一）。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>TS · npm monorepo</span></span>
+        <span class="meta-item">沙箱 · <span>opt-in · host-side</span></span>
+        <span class="meta-item">协议 · <span>MIT</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">pi-agent-core</span>
+          <span class="tag">Self-Extension</span>
+          <span class="tag">Three-Tier Sandbox</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+    <a href="02-deepseek-harness.html" class="card" style="text-decoration:none;color:inherit;">
+      <div class="card-head">
+        <span class="dot"></span>
+        <span class="num">06 / 06</span>
+      </div>
+      <h3 class="card-title">deepseek-harness</h3>
+      <p class="card-sub">Agent Meta-Framework</p>
+      <p class="card-desc">"一切皆插件"——基于 vendored 的 Cordis。能力通过 capability-seam（ctx.llm / ctx.tools / ctx.sandbox / ctx.sessions / ctx.subagents）暴露。会话事件日志是模型上下文的唯一真相源（类型系统强制）。</p>
+      <div class="card-meta">
+        <span class="meta-item">架构 · <span>TS · vendored Cordis</span></span>
+        <span class="meta-item">沙箱 · <span>Landlock/Seatbelt/ACL</span></span>
+        <span class="meta-item">版本 · <span>0.1.1-rc.1</span></span>
+      </div>
+      <div class="pair">
+        <span class="pair-label">中心</span>
+        <div class="pair-row">
+          <span class="tag">Cordis plugin tree</span>
+          <span class="tag">SessionEventMap</span>
+          <span class="tag">sub-agent backends</span>
+        </div>
+      </div>
+      <span class="card-cta" style="margin-top:1rem;">View diagram</span>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <span>READING · harness-comparison.md</span>
+    <span>SURVEY · D:\2026\OutstandingProject\AI Harness Agent\</span>
+    <span>2026-08-21</span>
+  </div>
+</div>
+<script>
+(function(){
+  var btn = document.querySelector('.theme-toggle');
+  if (btn) {
+    btn.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      btn.textContent = next === 'dark' ? 'light' : 'dark';
+    });
+  }
+  var path = (window.location.pathname.split('/').pop() || 'index.html');
+  document.querySelectorAll('.topnav-links a').forEach(function(a){
+    if (a.getAttribute('href') === path) a.classList.add('active');
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    var links = Array.prototype.slice.call(document.querySelectorAll('.topnav-links a'));
+    var idx = links.findIndex(function(a){ return a.classList.contains('active'); });
+    if (e.key === 'ArrowRight' && idx >= 0 && idx < links.length - 1) {
+      window.location.href = links[idx + 1].getAttribute('href');
+    } else if (e.key === 'ArrowLeft' && idx > 0) {
+      window.location.href = links[idx - 1].getAttribute('href');
+    }
+  });
+})();
+</script>
+</body>
+</html>
