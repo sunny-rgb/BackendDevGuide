@@ -32,11 +32,11 @@
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--paper); font-family: 'Geist', sans-serif; color: var(--ink); }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
   .eyebrow { font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); margin: 0 0 0.75rem; }
-  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 2.4rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; line-height: 1.1; }
-  .lede { font-family: 'Geist', sans-serif; color: var(--muted); font-size: 16px; margin: 0 0 2.5rem; max-width: 760px; line-height: 1.55; }
-  .lede em { font-family: 'Instrument Serif', serif; font-style: italic; color: var(--ink); }
+  h1 { font-family: 'Geist', sans-serif; font-weight: 600; font-size: 2.4rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; line-height: 1.15; }
+  .lede { font-family: 'Geist', sans-serif; color: var(--muted); font-size: 14px; margin: 0 0 2.5rem; max-width: 780px; line-height: 1.5; }
+  .lede em { font-family: 'Geist', sans-serif; font-style: normal; color: var(--muted); }
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
   @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   .card { background: var(--paper-2); border: 1px solid var(--rule); border-radius: 6px; padding: 1.5rem; transition: border-color 120ms ease; display: flex; flex-direction: column; }
@@ -73,10 +73,10 @@
 <body>
 <nav class="topnav" aria-label="Harness navigation">
   <div class="topnav-inner">
-    <a href="index.html" class="brand">
+    <span class="brand">
       <span class="brand-dot"></span>
       <span>Harness Diagrams</span>
-    </a>
+    </span>
     <ul class="topnav-links">
       <li><a href="index.html">index</a></li>
       <li><a href="01-openclaw.html">01 openclaw</a></li>
@@ -91,7 +91,7 @@
   </div>
 </nav>
 <div class="wrap">
-  <p class="eyebrow">AI Harness Agent · Architecture Index</p>
+  <p class="eyebrow">Harness Architecture · Index</p>
   <h1>六个 Harness，六种架构</h1>
   <p class="lede">把 <em>openclaw</em>、<em>hermes-agent</em>、<em>claude-code</em>、<em>codex</em>、<em>pi</em>、<em>deepseek-harness</em> 这六个仓库的架构各画一张图。每张图都围绕那一家最锋利的差异点展开——单看一张图就能和别家区分开。</p>
 
