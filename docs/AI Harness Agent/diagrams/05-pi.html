@@ -80,7 +80,6 @@
   <p class="subtitle">一个 npm 上的 TypeScript monorepo，10 个包，<code>pi-agent-core</code> 居中。它最有辨识度的两个设计："self-extension"——agent 在运行时能写自己的扩展，并且注册回工具表里；以及一个反主流的选择——故意不在自己包里做权限系统，沙箱完全推给宿主层（自带 Gondolin micro-VM，或者外接 Docker / OpenShell 三选一），把"安全在哪一层"这件事明确让出来。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d6-title d6-desc">
-    <title id="d6-title">pi 架构图</title>
     <desc id="d6-desc">An npm TypeScript monorepo with pi-agent-core at the center. The runtime is fed by the pi-ai unified multi-provider LLM API, the pi-coding-agent CLI entry, and the pi-tui differential-rendering library. The agent executes through one of three opt-in host sandboxes (Gondolin micro-VM, plain Docker, or OpenShell), writes its own extensions into a tool registry through the self-extension loop, emits vendor-neutral telemetry through pi-telemetry, and reads provider credentials from a separate auth pool.</desc>
 
     <defs>

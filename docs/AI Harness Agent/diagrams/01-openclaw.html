@@ -80,7 +80,6 @@
   <p class="subtitle">如果把别的 agent 当成"一个 CLI 工具"，openclaw 更像一个 24 小时在线的家庭网关——WhatsApp、Telegram、Discord 这些聊天工具，桌面端、移动端、Web 控制台，全都连到一个长驻的 Gateway 进程上，由它统一路由到内嵌的编码 agent。沙箱是默认关闭、主动开启的（Docker / Podman / SSH / OpenShell 任选），这点跟 codex 那种"开机就锁死"的取向正好相反。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d1-title d1-desc">
-    <title id="d1-title">openclaw 架构图</title>
     <desc id="d1-desc">A long-lived Gateway process at the center connects messaging channels, companion apps, and a web control UI to an embedded coding agent runtime. A pluggable sandbox backend, an ACP bridge to other agent harnesses, a per-agent SQLite state store, and the ClawHub plugin marketplace hang off the Gateway.</desc>
 
     <defs>

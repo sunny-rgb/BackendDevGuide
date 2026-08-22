@@ -80,7 +80,6 @@
   <p class="subtitle">一个 Python 项目，但 UI 面多到有点夸张——CLI、TUI、Electron 桌面端、Web、二十多个聊天平台的接入、甚至 ACP 协议让 IDE 直接把它当服务端跑；这些入口共享同一套对话循环。它最大的卖点是"自我进化"：agent 自己写技能文件，再由一个独立的小模型当 curator 去审、去归档、决定要不要让技能生效——相当于 agent 给自己做 Code Review。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d3-title d3-desc">
-    <title id="d3-title">hermes-agent 架构图</title>
     <desc id="d3-desc">A single Python conversation loop at the center, fed by a tool registry and composable toolset aliases, talks to roughly 30 LLM providers, executes through seven pluggable sandbox backends, persists to a SQLite plus FTS5 state store, reads file-backed MEMORY and USER profiles curated by an auxiliary-model curator, and exposes itself across CLI, TUI, desktop, web, messaging, and ACP surfaces.</desc>
 
     <defs>

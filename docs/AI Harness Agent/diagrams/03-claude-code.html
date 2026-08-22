@@ -80,7 +80,6 @@
   <p class="subtitle">Anthropic 出品的 CLI，核心二进制是闭源的，开源仓库只是它的扩展面——plugin marketplace、hooks、skills、sub-agents、slash commands 这些扩展点全用 JSON 或 Markdown 描述，几乎零代码就能扩展。如果在面试里要讲它跟别人最大的区别，重点说企业部署：通过 MDM（Jamf、Intune、ADMX、Group Policy）把"能用哪些模型、能装哪些插件"这类策略下发到全公司员工的机器上，是为 ToB 场景量身设计的能力。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d5-title d5-desc">
-    <title id="d5-title">claude-code 架构图</title>
     <desc id="d5-desc">A closed CLI binary at the center exposes itself across CLI, TUI, IDE, Web, Desktop, and GitHub surfaces, loads extensions from a JSON-Schema-validated plugin marketplace, fires PreToolUse, PostToolUse, Stop, and SessionStart hooks, auto-invokes Skills, spawns Sub-agents with per-agent tool and model allowlists, executes Slash Commands, and is governed by Settings and Enterprise MDM policy.</desc>
 
     <defs>

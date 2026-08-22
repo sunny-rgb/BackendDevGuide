@@ -80,7 +80,6 @@
   <p class="subtitle">deepseek 把 Koishi 生态里的 Cordis 框架直接 vendor 进来搭骨架——一句话讲就是"什么都是插件"：调 LLM 是一个插件、注册工具是一个插件、起沙箱也是一个插件，全都挂到同一个 ctx 上。最值得在面试里聊的一点是，它不直接维护对话历史，而是把所有事件先写进 Session Event Log，连发给模型的上下文都是从这份日志实时 derive 出来的；这件事由 TypeScript 的 SessionEventMap 在编译期强制保证，绕不过。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d2-title d2-desc">
-    <title id="d2-title">deepseek-harness 架构图</title>
     <desc id="d2-desc">A Cordis plugin tree at the center composes capability seams for the agent loop, LLM adapter, tool registry, sandbox, session event log, sub-agent backends, and persistence. The session event log is the single source of truth for model context, enforced by TypeScript declaration merging of SessionEventMap.</desc>
 
     <defs>

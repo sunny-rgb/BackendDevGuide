@@ -80,7 +80,6 @@
   <p class="subtitle">OpenAI 出品的 Rust 项目，2024 edition 的 workspace 拆了 130 多个 crate，codex-core 是心脏。最值得面试拿出来讲的是它的安全设计——Linux、macOS、Windows 三个 OS 各有自己一套原生沙箱实现（seccomp+bwrap / sandbox-exec / Job+ACL+WFP），并且在 OS 沙箱之上还多套了一层独立的声明式策略 execpolicy，把"怎么隔离"和"该不该允许"两件事明确拆开。再加一条比较硬核的约束：跟模型的所有通信只能走 WireApi::Responses 这一种 wire 协议，团队把"别乱接模型 API"这件事直接写进了类型系统。</p>
 
   <svg viewBox="0 0 1100 720" role="img" aria-labelledby="d4-title d4-desc">
-    <title id="d4-title">codex 架构图</title>
     <desc id="d4-desc">The Rust codex-core agent loop at the center is fed by CLI, TUI, IDE, and Desktop entry points plus a JSON-RPC app-server and a small set of model providers. It exchanges wire types with codex-protocol, executes through three per-OS native sandboxes, enforces an execpolicy DSL, persists via rollout plus state_db, and spawns sub-agents under multi-agent AgentPath namespaces.</desc>
 
     <defs>
