@@ -104,7 +104,7 @@
       </div>
       <h3 class="card-title">openclaw</h3>
       <p class="card-sub">Personal AI Gateway</p>
-      <p class="card-desc">一个常驻 Gateway 进程居中，30+ 消息通道、桌面/移动 app、Web 控制 UI、内嵌编码 agent 全挂在它身上。沙箱默认关闭，可插拔（Docker / Podman / SSH / OpenShell）。</p>
+      <p class="card-desc">如果别的 agent 是"CLI 工具"，openclaw 更像一个 24 小时在线的家庭网关——所有聊天平台、桌面/移动 app、Web 控制台都连到一个长驻 Gateway，再由它统一调度底下的编码 agent。沙箱默认是关的（要开就接 Docker/SSH/OpenShell 之一），这点和 codex 那种"开机就锁死"的取向正好相反。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>TS · pnpm monorepo</span></span>
         <span class="meta-item">沙箱 · <span>opt-in · Docker/SSH</span></span>
@@ -128,7 +128,7 @@
       </div>
       <h3 class="card-title">hermes-agent</h3>
       <p class="card-sub">Self-Improving Personal Agent</p>
-      <p class="card-desc">一个 Python 写的多入口个人 agent。同一套对话循环跑在 CLI / TUI / Electron / Web / 20+ 消息通道 / ACP IDE 服务端上。独特的"自我进化"循环——agent 写自己的技能，curator 用辅助模型维护它们。</p>
+      <p class="card-desc">一个 Python 项目，UI 面多到有点夸张——CLI、TUI、Electron 桌面端、Web、二十多个聊天平台、ACP 协议直接当 IDE 服务端——所有入口共享同一套对话循环。最特别的是"自我进化"：agent 自己写技能文件，再由一个独立的小模型当 curator 审一遍、决定要不要让技能生效，等于让 agent 给自己做 Code Review。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>Python 3.11 · TS UIs · native FTS5</span></span>
         <span class="meta-item">沙箱 · <span>7 backends</span></span>
@@ -152,7 +152,7 @@
       </div>
       <h3 class="card-title">claude-code</h3>
       <p class="card-sub">Anthropic's Coding Agent</p>
-      <p class="card-desc">闭源的 CLI 二进制居中。本仓库只是扩展面：plugin marketplace、hooks、skills、sub-agents、slash commands 全用 JSON / Markdown 描述。最强的是企业部署故事——MDM（Jamf / Intune / ADMX / Group Policy）做强制策略。</p>
+      <p class="card-desc">Anthropic 出的 CLI，二进制本身是闭源的，开源仓库只是它的扩展面——plugin、hooks、skills、sub-agents、slash commands 全用 JSON 或 Markdown 描述，几乎零代码就能扩展。真正和别人拉开差距的是企业部署：通过 MDM（Jamf、Intune、ADMX、Group Policy）把"能用哪些模型、能装哪些插件"这类策略下发到全公司员工的机器上，是为 ToB 场景量身设计的能力。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>closed binary · open extension</span></span>
         <span class="meta-item">沙箱 · <span>app-level · opt-in</span></span>
@@ -176,7 +176,7 @@
       </div>
       <h3 class="card-title">codex</h3>
       <p class="card-sub">OpenAI's Coding Agent</p>
-      <p class="card-desc">Rust 2024 workspace（130+ crate），codex-core 居中。三个 OS 各一套原生沙箱（Linux seccomp+bwrap / macOS sandbox-exec / Windows Job+ACL+WFP）。execpolicy 是 OS 沙箱之上的独立声明式策略层。`WireApi::Responses` 是唯一合法 wire。</p>
+      <p class="card-desc">OpenAI 的 Rust 项目，2024 edition 的 workspace 拆了 130 多个 crate，codex-core 是那颗心脏。面试时最值得拿出来讲的是它的安全设计——Linux、macOS、Windows 三个 OS 各有自己一套原生沙箱实现（seccomp+bwrap / sandbox-exec / Job+ACL+WFP），并且在 OS 沙箱之上还多套了一层独立的 execpolicy DSL，把"怎么隔离"和"该不该允许"两件事明确拆开。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>Rust 2024 · 130 crates</span></span>
         <span class="meta-item">沙箱 · <span>always-on · per-OS native</span></span>
@@ -200,7 +200,7 @@
       </div>
       <h3 class="card-title">pi</h3>
       <p class="card-sub">Self-Extensible Coding Agent</p>
-      <p class="card-desc">npm monorepo 里 10 个 TS 包，<code>pi-agent-core</code> 居中。最锋利的是 self-extension——agent 写自己的扩展；以及"故意不带权限系统"——沙箱明确推给宿主层（Gondolin micro-VM / Docker / OpenShell 三选一）。</p>
+      <p class="card-desc">一个 npm 上的 TS monorepo，10 个包，<code>pi-agent-core</code> 居中。两个最有辨识度的设计："self-extension"——agent 在运行时能写自己的扩展并注册回工具表；以及一个反主流的选择——故意不做自己的权限系统，沙箱完全推给宿主层（自带 Gondolin micro-VM，或者外接 Docker / OpenShell 三选一）。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>TS · npm monorepo</span></span>
         <span class="meta-item">沙箱 · <span>opt-in · host-side</span></span>
@@ -224,7 +224,7 @@
       </div>
       <h3 class="card-title">deepseek-harness</h3>
       <p class="card-sub">Agent Meta-Framework</p>
-      <p class="card-desc">"一切皆插件"——基于 vendored 的 Cordis。能力通过 capability-seam（ctx.llm / ctx.tools / ctx.sandbox / ctx.sessions / ctx.subagents）暴露。会话事件日志是模型上下文的唯一真相源（类型系统强制）。</p>
+      <p class="card-desc">把 Koishi 生态里的 Cordis 框架直接 vendor 进来搭骨架——一句话讲就是"什么都是插件"：调 LLM、注册工具、起沙箱都是插件，全挂到同一个 ctx 上。最值得在面试里聊的是它的 Session Event Log：所有事件先写日志，连发给模型的上下文都是从这份日志实时 derive 出来的，并且这件事由 TypeScript 的 SessionEventMap 在编译期强制保证，想绕都绕不过。</p>
       <div class="card-meta">
         <span class="meta-item">架构 · <span>TS · vendored Cordis</span></span>
         <span class="meta-item">沙箱 · <span>Landlock/Seatbelt/ACL</span></span>
